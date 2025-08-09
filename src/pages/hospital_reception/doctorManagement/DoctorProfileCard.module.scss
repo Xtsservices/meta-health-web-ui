@@ -1,0 +1,72 @@
+
+
+.card {
+  width: 300px;
+  border-radius: 26px !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: filter 0.3s ease-in-out;
+  &.hidden {
+    filter: grayscale(100%);
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: #B2CAEA;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  background-color: #ffa726;
+}
+.clockButton {
+  color: #ffa726;
+}
+
+.moreButton {
+  padding: 4px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.doctorImage {
+  width: 120px;
+  height: 120px;
+  
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: bold !important;
+  font-size: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color:#252525;
+  margin-bottom: 10px !important;
+}
+
+.button {
+  margin: auto !important;
+  background-color: #3775C9;
+  text-transform: none !important;
+}
+.cardContent {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+}

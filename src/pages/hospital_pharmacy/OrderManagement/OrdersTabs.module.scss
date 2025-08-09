@@ -1,0 +1,78 @@
+/* Tabs.module.scss */
+.tabsContainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.tabHeaders {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabHeaders button {
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight:500;
+  flex-grow: 1; /* Make buttons take equal space */
+  text-align: center; /* Center the button text */
+}
+
+.tabHeaders button.active {
+  color: #000;
+  border-bottom: 3px solid #f59706;
+  font-weight: bold;
+}
+
+.tabHeaders button:not(.active) {
+  color: #777;
+}
+
+.tabContent {
+  // padding: 0px 0; /* Only padding on top and bottom to create space, no background */
+  color: #000; /* Ensure text color is visible */
+  min-height: 86vh;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeFrameContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.timeFrameLabel {
+  font-size: 14px;
+  color: darkgray;
+}
+
+.timeFrameDate {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.datePickerContainer {
+  margin-top: 4px;
+  border: 2px solid #ffff
+}
+
+.datePicker .react-datepicker__input-container input {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent; /* Optional: Make background transparent */
+}

@@ -1,0 +1,33 @@
+.dialogTitle {
+  text-align: center;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.grid {
+  padding: 1rem;
+}
+
+.dialogActions {
+  justify-content: space-between !important;
+  padding: 8px 24px;
+}
+.calendar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 3rem;
+
+}
+.datePickerContainer {
+  margin-top: 4px;
+  border: 2px solid #ffff;
+ 
+}
+.datePicker {
+  width:180px;
+  margin-left: 10px;
+
+}

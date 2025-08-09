@@ -1,0 +1,67 @@
+.container {
+  padding: 20px;
+  border-radius: 1.5rem;
+  background-color: #f9f9f9;
+  width: 100%;
+  margin-top: 18px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+.list_of_doctor{
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #CBCBCB;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.container__dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+.formControl {
+  width: 30%;
+}
+
+.container__button {
+  height: 40px;
+}
+
+.doctorCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 2rem;
+}
+
+.page_navigation {
+  width: 25rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  select {
+    margin: 0 1rem;
+  }
+}
+
+.margin_left_auto {
+  margin-left: auto !important;
+}
+.doctor_card_scroll_container {
+  height:80vh;
+  overflow: scroll;
+}

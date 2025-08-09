@@ -1,0 +1,201 @@
+@import "./../../breakpoint.scss";
+
+.widzet {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  margin-bottom: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  .widzet_box {
+    // position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    width: 220px; /* Adjust the width as per your requirement */
+    height: 400px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    img {
+      height: 4rem;
+      width: 4rem;
+      object-fit: contain;
+    }
+  }
+
+  .icon {
+    margin-bottom: 20px;
+    max-height: 100px;
+  }
+
+  .heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .paragraph {
+    font-size: 1em;
+    margin-bottom: 15px;
+    flex: 1; /* Makes the paragraph flexible to fill space */
+  }
+
+  .viewDashboard {
+    color: #034398;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: auto;
+  }
+
+  .opd {
+    background-color: #f9b995;
+    box-shadow: 0px 10px 30px #f9b995;
+    border-radius: 20px;
+  }
+  .ipd {
+    background-color: #c0e4ff;
+    box-shadow: 0px 10px 30px #c0e4ff;
+    border-radius: 20px;
+  }
+  .triage {
+    background-color: #ffced6;
+    box-shadow: 0px 10px 30px #ffced6;
+    border-radius: 20px;
+  }
+  .emergencyRed {
+    background-color: #f99f99;
+    box-shadow: 0px 10px 30px #f99f99;
+    border-radius: 20px;
+  }
+  .emergencyYellow {
+    background-color: #ffffa7;
+    box-shadow: 0px 10px 30px #ffffa7;
+    border-radius: 20px;
+  }
+  .emergencyGreen {
+    background-color: #bff0bf;
+    box-shadow: 0px 10px 30px #bff0bf;
+    border-radius: 20px;
+  }
+  .ot {
+    background-color: #c0b8e9;
+    box-shadow: 0px 10px 30px #c0b8e9;
+    border-radius: 20px;
+  }
+  .pathology {
+    background-color: #e7c2dd;
+    box-shadow: 0px 10px 30px #e7c2dd;
+    border-radius: 20px;
+  }
+  .radiology {
+    background-color: #ecdba7;
+    box-shadow: 0px 10px 30px #ecdba7;
+    border-radius: 20px;
+  }
+  .pharmacy {
+    background-color: #c6e9dc;
+    box-shadow: 0px 10px 30px #c6e9dc;
+    border-radius: 20px;
+  }
+  .reception {
+    background-color: #D4C3C2;
+    box-shadow: 0px 10px 30px #D4C3C2;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    .widzet_box {
+      width: 100%; /* Make card width 100% on mobile/tablet */
+    }
+
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1022px) {
+    .widzet_box {
+      width: calc(50% - 1rem); /* Two cards per row on tablets */
+    }
+  }
+
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .widzet_box {
+      width: calc(25% - 1rem); /* Four cards per row on laptops */
+    }
+
+    &:nth-child(5) ~ .widzet_box {
+      width: calc(
+        33.333% - 1rem
+      ); /* Three cards per row on laptops for the bottom row */
+    }
+  }
+
+  @media (min-width: 1441px) {
+    .widzet_box {
+      width: calc(
+        14.2857% - 1rem
+      ); /* Uniform width for all cards on larger screens */
+    }
+  }
+}
+
+.heading {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+
+  @include respond(tab-mid) {
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph {
+  color: #656565;
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 50px;
+
+  @include respond(tab-land) {
+    font-size: 1.2rem;
+  }
+
+  @include respond(tab-mid) {
+    font-size: 1.1rem;
+  }
+}
+
+.dashboard {
+  color: #034398;
+  cursor: pointer;
+  margin-top: 4rem;
+  font-weight: 600;
+
+  // position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center; /* Optional: center text */
+  padding: 26px 0; /* Optional: padding */
+
+  @include respond(tab-land) {
+    margin-top: 2rem;
+  }
+
+  @include respond(tab-mid) {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+}

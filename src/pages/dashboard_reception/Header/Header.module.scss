@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.search__bar {
+  align-items: center;
+  position: relative;
+}
+
+.search__bar input {
+  padding: 10px 150px 10px 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+}
+
+.search__icon {
+  position: absolute;
+  right: 12px;
+  bottom: 5px;
+  font-size: 1.2em;
+  color: white;
+  background-color: orange;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.logo__img {
+  height: 3.5rem;
+  width: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__icon {
+  font-size: 1.5em;
+  margin-bottom: 5px; /* Margin to separate icon from username */
+}
+
+.username {
+  font-size: 1em;
+}

@@ -1,0 +1,35 @@
+.receptionDashboard__container {
+  min-height: 100vh;
+  background-color: #ebe6e6;
+  padding: 1rem;
+}
+
+.receptionDashboard__innerContainer {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.outletContainer {
+  flex: 1;
+  overflow-y: auto; /* Allow the Outlet content to be scrollable */
+  padding: 1rem;
+}
+
+// .receptionDashboard__container {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   padding: 1rem;
+// }
+
+// .receptionDashboard__innerContainer {
+//   display: flex;
+//   flex: 1;
+//   overflow: hidden; /* Prevent the container from overflowing */
+// }
+
+// .outletContainer {
+//   flex: 1;
+//   overflow-y: auto; /* Allow the Outlet content to be scrollable */
+//   padding: 1rem;
+// }

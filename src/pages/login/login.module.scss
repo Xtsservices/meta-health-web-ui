@@ -1,0 +1,85 @@
+@import "./../../breakpoint.scss";
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1f76e8;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  overflow-y: hidden;
+  @include respond(phone) {
+    height: auto;
+  }
+  &_form {
+    flex: 3;
+    min-width: 35rem;
+    background-color: white;
+    margin: 2rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    @include respond(phone) {
+      //   padding: 0.5rem;
+      //   margin-top: 0.5rem;
+      margin: 0;
+      border-radius: 0;
+    }
+    &_logo {
+      display: flex;
+      justify-content: space-between;
+      & img {
+        object-fit: contain;
+        @include respond(phone) {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+    }
+    @include respond(phone) {
+      min-width: 10rem;
+    }
+  }
+  &_vector {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+    @include respond(desktop-small) {
+      padding: 2rem;
+    }
+    @include respond(tab-land) {
+      justify-content: center;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+    &_heading {
+      align-self: stretch;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 56px;
+      /* or 133% */
+
+      color: #ffffff;
+      margin-bottom: 5rem;
+      @include respond(tab-land) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    img {
+      @include respond(tab-land) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

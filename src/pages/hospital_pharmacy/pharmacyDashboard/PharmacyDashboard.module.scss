@@ -1,0 +1,531 @@
+.homeMainContainer {
+  min-height: 100vh;
+  padding: 15px;
+  width: 100%;
+}
+.subHeader {
+  background-color: #023f80;
+}
+.subContainer {
+  display: flex;
+  gap: 2rem;
+  border-radius: 40px;
+}
+
+.dotGreen {
+  height: 15px;
+  width: 15px;
+  border: 1px solid green;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 3px;
+}
+
+.dotOrange {
+  height: 15px;
+  width: 15px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background-color: orange;
+  margin-right: 3px;
+}
+
+.dotBlue {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #49b6ff;
+  border-radius: 50%;
+  background-color: #49b6ff;
+  margin-right: 3px;
+}
+
+.container {
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+
+  @media (min-width: 576px) {
+    order: 1;
+  }
+
+  @media (min-width: 992px) {
+    width: 50%;
+    order: 1;
+  }
+}
+
+.containerLg {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 576px) {
+    order: 2;
+  }
+
+  @media (min-width: 992px) {
+    width: 50%;
+    order: 2;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.barChartMainContainer {
+  background-color: #ffffff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  max-height: 355px;
+  overflow-y: auto;
+}
+
+.barChartSubContainer {
+  min-height: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.conatinerHeader {
+  background-color: #1977F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  font-weight: 700;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.barcharUl {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opd {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #f9b995;
+  border-radius: 50%;
+  background-color: #f9b995;
+  margin-right: 3px;
+}
+
+.ipd {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #c0e4ff;
+  border-radius: 50%;
+  background-color: #c0e4ff;
+  margin-right: 3px;
+}
+
+.emergency {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #f99f99;
+  border-radius: 50%;
+  background-color: #f99f99;
+  margin-right: 3px;
+}
+
+.chartLabel {
+  text-align: center;
+}
+
+.refreshIcon {
+  font-size: 36px;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.threeItemsHeadings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingDrugName {
+  width: 9rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.headingExpiryDate {
+  width: 12rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.headingReplace {
+  width: 6rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.threeItemsData {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.dataDrugName {
+  width: 9rem;
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.expiryDateContainer {
+  display: flex;
+  align-items: center;
+  width: 12rem;
+}
+
+.dataExpiryDate {
+  font-size: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.notificationIcon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: red;
+}
+
+.replaceContainer {
+  width: 6rem;
+}
+
+.orderCheckboxStyle {
+  height: 20px;
+  width: 20px;
+  color: #f59706;
+  margin-left: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.orderCheckboxStyle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.orderCheckboxStyle:checked {
+  background-color: orange;
+}
+
+.orderCheckboxStyle:checked::after {
+  opacity: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem;
+}
+
+.buttonReplace {
+  background-color: #023f80;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.buttonOrder {
+  background-color: #023f80;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.emptyDataContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyDataText {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.expiredProductMainContainer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // border-radius: 8px;
+  // // display: flex;
+  // // justify-content: space-between;
+  // align-items: center;
+  // padding: 5px;
+  // color: white;
+}
+
+.expiredProductContainer {
+  background-color: #1977F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
+.expiredProductContainerData {
+  background-color: #ffffff;
+  padding: 1rem;
+  min-height: 30vh;
+  font-weight: 700;
+}
+
+.expiredProductTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lowStockMainContainer {
+  background-color: #ffffff;
+  border-radius: 20px;
+  min-height: 350px;
+
+}
+
+.lowStockContainer {
+  background-color: #1977F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  font-weight: 700;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.lowStockTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lowStockContainerData {
+  background-color: #ffffff;
+  padding: 1rem;
+  min-height: 30vh;
+}
+
+.lowStockNameContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 0.5rem;
+}
+
+.dataQuantity {
+  width: 6rem;
+  margin-left: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.orderContainer {
+  width: 6rem;
+}
+
+.tableHeadings th {
+  font-size: medium;
+  font-weight: 600;
+  
+}
+.tableHeadings {
+  position: sticky;
+  top : 0; 
+  z-index: 2;
+  background-color: white;
+}
+
+.tbStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reordercontainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem;
+}
+
+.reorderbutton {
+  padding: 8px;
+  margin-top: 12px;
+  background-color: #9B9B9B; 
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 1.0rem;
+  border: none;
+  cursor: pointer;
+  height:30px;
+  width:100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.reorderbutton:hover {
+  background-color: #f59706;
+}
+
+.datePicker{
+  border: 2px solid white;
+  border-left:1px solid gray !important;
+  border-radius: 0px !important;
+  height: 12px;
+}
+
+// .calendar {
+//   display: flex;
+//   align-items: center;
+//   background-color: #ffffff;
+//   padding: 8px;
+//   border-radius: 8px;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//   // padding-left: 6px;
+//   // width: 210px;
+// }
+.calendar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 3rem;
+}
+
+.timeFrameContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.timeFrameLabel {
+  font-size: 14px;
+  color: darkgray;
+}
+
+.timeFrameDate {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.datePickerContainer {
+  margin-top: 4px;
+  border: 2px solid #ffff
+}
+
+.datePicker .react-datepicker__input-container input {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent; /* Optional: Make background transparent */
+}
+
+.homeMainContainer {
+  background-color: #FFFFFF;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.homeMainContainer h3{
+  margin-left: 15px;
+}
+.order_reorder_button_Style {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin:1rem; 
+  background: #ffffff;
+  border-top: 0.5px solid #9B9B9B;
+  padding: 5px;
+}
+.no_products_found_container {
+  display: flex;
+  flex-direction: column;
+  height:300px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.nodata{
+  font-weight: 300;
+  color: gray;
+}
+
+.checkbox_styling {
+  width: 17px;
+  height: 17px;
+  appearance: none; /* Remove default checkbox */
+   /* Border color */
+  border-radius: 4px; /* Slight rounding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.checkbox_styling:checked {
+  background-color: #F59706;
+  border-color:#F59706;
+  
+}
+.checkbox_styling::before {
+  content: "✔"; 
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+}

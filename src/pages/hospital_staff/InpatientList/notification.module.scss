@@ -1,0 +1,308 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+
+  &_date {
+    width: 95%;
+    // overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    & > * {
+      margin-right: 10px;
+    }
+    button {
+      height: 2rem;
+      flex-basis: 8rem;
+      min-width: 10rem;
+      padding: 0.4rem 0.8rem;
+      background: #8a8a8a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      //   display: flex;
+      border-radius: 30px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .active {
+      background: #1977f3;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &_main {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    background: #fff;
+    padding: 1rem;
+    /* card shadow */
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    &_timebar {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      h4 {
+        span {
+          color: #1977f3;
+        }
+      }
+      button {
+        display: flex;
+        flex-direction: row;
+        padding: 0.6rem;
+        width: 13rem;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        .left {
+          flex: 3;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .time {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          .status {
+            border-radius: 40px;
+            padding: 0.4rem;
+          }
+        }
+        .right {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    &_medicine_bar {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        h3 {
+          color: #f38219;
+          margin: 0;
+        }
+        .current_time {
+          background: #f90;
+          color: white;
+          padding: 0.5rem;
+          border-radius: 20px;
+        }
+      }
+      .options {
+        display: flex;
+        background-color: white;
+
+        // justify-content: space-around;
+        button {
+          margin-right: 0.8rem;
+          border: none;
+          //   height: 1.4rem;
+          width: 6rem;
+          border-radius: 20px;
+          border: 1px solid grey;
+          background-color: white;
+          padding: 0.4rem;
+          cursor: pointer;
+        }
+        button.active {
+          border: 1px solid #1977f3;
+          background: #1977f3;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.container {
+  .active_button {
+    background: #f90;
+    color: #ffffff;
+    .status {
+      background-color: #ffd7b1;
+      color: #f38219;
+    }
+  }
+  .normal_button {
+    background: #ebf2fc;
+    color: #1997f3;
+    .status {
+      background: #bae2ff;
+      color: #1997f3;
+    }
+  }
+  .inactive_button {
+    background: #f0f0f0;
+    color: #8a8a8a;
+    .status {
+      background: #bae2ff;
+      color: #8a8a8a;
+    }
+  }
+}
+
+.container {
+  .medicines {
+    overflow-y: scroll;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .medicine_box {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      //   border-radius: 20px;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        .name {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .images {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid #bae2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            img {
+              height: 2rem;
+              width: 2rem;
+              border-radius: 50%;
+            }
+          }
+          h3 {
+            font-size: 1.2rem;
+            color: #1997f3;
+            margin-top: 20px;
+          }
+        }
+        select {
+          height: 2rem;
+          padding: 0.2rem 0.5rem;
+          border-radius: 15px;
+          display: flex;
+          cursor: pointer;
+        }
+      }
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // justify-content: space-between;
+
+        &_item {
+          border-radius: 5px;
+          border: 1px solid #8a8a8a;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0.8rem;
+          width: auto;
+          margin-right: 15px;
+          min-width: 4rem;
+          height: 4.5rem;
+
+          p {
+            margin: 0;
+          }
+          span {
+            font-size: 1.4rem;
+          }
+          h4 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin: 0;
+            margin-top: 0.6rem;
+          }
+          
+        }
+      }
+      .notes {
+        input {
+          width: 100%;
+          margin-top: 1rem;
+          height: 1.8rem;
+          padding: 0.2rem 1rem;
+          box-sizing: border-box;
+        }
+      }
+      .medicine_button {
+        height: 1rem;
+        padding: 1rem;
+        border-radius: 30px;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        border: none;
+        background-color: #1977f3;
+        color: white;
+        margin-top: 1rem;
+        cursor: pointer;
+        &:active {
+          background-color: #13417d;
+        }
+      }
+    }
+    // .medicine_box.med_active {
+    //   background: #bae2ff;
+    // }
+  }
+  .medicines {
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}

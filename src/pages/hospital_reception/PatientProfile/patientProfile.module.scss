@@ -1,0 +1,153 @@
+.mainContainer{
+    background-color:white;
+   
+    width: 100% !important;
+   
+    height: 100vh;
+    border-radius: 16px;
+   overflow: scroll;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -5px;
+    box-sizing: border-box;
+}
+.heading{
+    padding: 15px;
+}
+.userName{
+    padding: 10px;
+    margin-top: -20px;
+}
+.patientId{
+    padding-left: 10px;
+    margin-top: -20px;
+}
+.profile{
+    margin: 10px;
+}
+.profile_info_left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .infoItem {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 2px; 
+  }
+  
+  .label {
+    font-weight: bold;
+    flex: 0 0 150px;  /* Fixed width for labels, adjust as needed */
+  font-weight: bold;
+  }
+  
+  .value {
+    text-align: right;
+    flex: 1;
+  }
+  .primaryCotainer{
+    margin: 10px;
+  }
+  
+.profile_container {
+    height: auto;
+    width: 96%;
+    background-image: linear-gradient(#d2e4f9, #f2f8ff);
+    margin-top: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 35px;
+    .profile_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 6rem;
+      flex: 1;
+      // background-color: orange;
+      img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 4px solid #1977f3;
+      }
+      svg {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        border: 4px solid grey;
+        fill: grey;
+      }
+    }
+    .profile_info {
+      flex: 3;
+      min-width: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+    
+      margin-left: 30px;
+      padding: 1rem;
+      box-sizing: border-box;
+      color: #787878;
+      &_main {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: stretch;
+      }
+      p {
+        margin: 5px 0;
+      }
+      h3 {
+        color: black;
+        span {
+          color: #787878;
+        }
+      }
+      &_left {
+        flex: 2;
+        //   background-color: rebeccapurple;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      &_right {
+        flex: 3;
+        p {
+          margin: 10px 0;
+        }
+        //   background-color: red;
+      }
+    }
+    .profile_options {
+      padding: 2rem;
+      box-sizing: border-box;
+      flex: 1;
+      ;
+      display: flex;
+     
+      align-items: flex-end;
+      justify-content: space-between;
+      &_inpatient {
+        padding: 0.2rem 0.5rem;
+        color: #2f620c;
+        border-radius: 30px;
+        background: #def2d0;
+      }
+      button {
+        border: none;
+        margin-right: 1rem;
+        color: black;
+        cursor: pointer;
+      }
+     
+    }
+  }

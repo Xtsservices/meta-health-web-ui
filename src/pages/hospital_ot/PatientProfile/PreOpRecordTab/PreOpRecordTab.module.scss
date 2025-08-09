@@ -1,0 +1,59 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+}
+.container_dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.container_button {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.ApprovedButton {
+  border: none;
+  background: #2a985c;
+  width: fit-content;
+  padding: 1rem 2rem;
+
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  border-radius: 35px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.RejectButton {
+    border: none;
+    background: #ac3939;
+    width: fit-content;
+    padding: 1rem 2rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    border-radius: 35px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}

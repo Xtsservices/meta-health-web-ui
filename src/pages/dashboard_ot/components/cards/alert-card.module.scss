@@ -1,0 +1,45 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.columnImageContainer {
+  display: flex;
+  height: 100%;
+  padding-inline: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  padding-left: 1rem;
+  padding: 0.5rem;
+  // @include boxDesign();
+  border-radius: 32px;
+  background-color: #eeeeee;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.column_btn_container {
+  display: flex;
+  align-items: start;
+  padding-block: 1rem;
+  padding-inline: 1.15rem;
+  justify-content: end;
+  flex: 1;
+  button {
+    @include blueButtonStyle();
+  }
+}
+
+p {
+  font-weight: bold;
+  span {
+    font-weight: normal;
+  }
+}

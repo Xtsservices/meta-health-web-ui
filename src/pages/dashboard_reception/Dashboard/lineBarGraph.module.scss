@@ -1,0 +1,73 @@
+
+.containerGraphBoxHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.borderShadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+.selectContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.marginLeftAuto {
+  margin-left: 3px;
+  background-color: #C5D8FF;
+  border: none;
+  padding: 5px;
+  margin-right: 4px;
+  color:#000
+}
+
+.select {
+  margin-right: 8px;
+}
+
+.graph_container {
+ width: 80%;
+}
+.graphContainer{
+  display: flex;
+  align-items: center;
+// width: 80%;
+}
+.yAxisLabel{
+   margin-top: 100px; 
+   margin-left: -40px ;
+}
+.yAxisContainer{
+  transform: rotate(-90deg);
+  transform-origin: left center;
+}
+.graphContent {
+  flex: 1;
+  margin-left: -90px;
+  width: 750px;
+}
+.xPara{
+  text-align: center;
+}
+
+.heading {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.selectDropdown{
+  display: flex;
+  
+}

@@ -1,0 +1,53 @@
+.mainContainer {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #ebe6e6;
+  padding: 20px;
+  border-radius: 1.5rem;
+  width: 100%;
+}
+.heading {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+.subContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tableHeader {
+  font-weight: 600;
+}
+.tableContainer {
+  // width: 100%;
+}
+.pharmaContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.tabContainer {
+  margin-top: 16px;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.coutryContainer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,50 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.dropDownMenu {
+  display: flex;
+  padding: 1rem;
+  padding-left: 1.5rem;
+  align-items: center;
+  height: 3rem;
+  justify-content: flex-start;
+  justify-content: flex-start;
+  border-radius: 40px;
+  background-color: white;
+  color: #8a8a8a;
+  border: none;
+  font-size: 1rem;
+
+  &_icon {
+    margin-right: 1rem;
+  }
+  & img {
+    height: 1rem;
+    width: 1rem;
+    object-fit: contain;
+  }
+
+  span {
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.1);
+    transition: all 200ms;
+  }
+}
+
+.dropDownContainer {
+  margin-inline: 0.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: transparent;
+  ul {
+    list-style-type: none;
+  }
+}

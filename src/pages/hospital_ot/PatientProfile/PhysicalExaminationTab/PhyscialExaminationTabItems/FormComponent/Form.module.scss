@@ -1,0 +1,47 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 16px;
+}
+
+.formControl {
+  min-width: 200px;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  height: 150px; /* Adjust height as necessary */
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.airwayFieldset {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.labelGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

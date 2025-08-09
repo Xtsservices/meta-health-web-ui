@@ -1,0 +1,5 @@
+const PATIENT_ACTION_TYPE = {
+  SET_ALL_PATIENT: "patient/SET_ALL_PATIENT"
+};
+
+export default PATIENT_ACTION_TYPE;

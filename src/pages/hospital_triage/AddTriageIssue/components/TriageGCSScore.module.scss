@@ -1,0 +1,13 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-block: 0.5rem;
+  border: 1px solid black;
+  padding-inline: 1.25rem;
+  border-radius: 40px;
+}

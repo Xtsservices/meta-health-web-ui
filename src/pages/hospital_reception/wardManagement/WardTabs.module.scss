@@ -1,0 +1,38 @@
+/* Tabs.module.scss */
+.tabsContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.tabHeaders {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.tabHeaders button {
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1; /* Make buttons take equal space */
+  text-align: center; /* Center the button text */
+}
+
+.tabHeaders button.active {
+  color: #000;
+  border-bottom: 3px solid #F59706;
+}
+
+.tabHeaders button:not(.active) {
+  color: #777;
+}
+
+.tabContent {
+  padding: 20px 0; /* Only padding on top and bottom to create space, no background */
+  color: #000; /* Ensure text color is visible */
+}

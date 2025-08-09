@@ -1,0 +1,128 @@
+@import './../../breakpoint.scss';
+
+.widzet {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: auto;
+  gap: 1rem;
+
+  .widzet_box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+
+    img {
+      height: 4rem;
+      width: 4rem;
+      object-fit: contain;
+    }
+  }
+
+  .orange {
+    background-color: #fbb892;
+    box-shadow: 0px 10px 30px #f4ada3;
+    border-radius: 40px;
+  }
+
+  .pink {
+    background-color: #ffced6;
+    box-shadow: 0px 10px 30px #ffdae0;
+    border-radius: 40px;
+  }
+
+  .red {
+    background-color: #f99f99;
+    box-shadow: 0px 10px 30px #f99f99;
+    border-radius: 40px;
+  }
+
+  .yellow {
+    background-color: #ffffa7;
+    box-shadow: 0px 10px 30px #ffffa7;
+    border-radius: 40px;
+  }
+
+  .green {
+    background-color: #c2ffc2;
+    box-shadow: 0px 10px 30px #c2ffc2;
+    border-radius: 40px;
+  }
+
+  .blue {
+    background: #c0e4ff;
+    box-shadow: 0px 10px 30px #c0e4ff;
+    border-radius: 40px;
+  }
+
+  .white {
+    background-color: #fefefe;
+    box-shadow: 0px 10px 30px #a3a3a3;
+    border-radius: 40px;
+  }
+
+  .grey {
+    background: #dbdbdb;
+    box-shadow: 0px 10px 30px #dbdbdb;
+    border-radius: 40px;
+  }
+
+  .purple {
+    background: #2382f7;
+    box-shadow: 0px 10px 30px #77b6fb;
+    border-radius: 40px;
+  }
+
+  @include respond(tab-port) {
+    @include respond(phone-big) {
+      flex-direction: column;
+
+      & > * {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.heading {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+
+  @include respond(tab-mid) {
+    font-size: 1.5rem;
+  }
+}
+
+.paragraph {
+  color: #656565;
+  text-align: center;
+
+  @include respond(tab-land) {
+    font-size: 1.2rem;
+  }
+
+  @include respond(tab-mid) {
+    font-size: 1.2rem;
+  }
+}
+
+.dashboard {
+  color: #034398;
+  cursor: pointer;
+  margin-top: 4rem;
+  font-weight: 600;
+
+  @include respond(tab-land) {
+    margin-top: 2rem;
+  }
+
+  @include respond(tab-mid) {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+  }
+}

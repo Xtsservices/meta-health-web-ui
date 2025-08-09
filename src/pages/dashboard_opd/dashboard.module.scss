@@ -1,0 +1,363 @@
+@import "./../../breakpoint.scss";
+.container {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  overflow-x: hidden;
+  grid-template-rows: repeat(10, [row-start] 6rem [row-end]) minmax(0rem, 2fr);
+  grid-template-columns:
+    repeat(3, [col-small-start] minmax(10rem, 3fr) [col-small-end])
+    [col-big-start] minmax(15rem, 4fr) [col-big-end];
+  @include respond(desktop-small) {
+    grid-template-columns: repeat(
+      6,
+      [col-small-start] minmax(6rem, 3fr) [col-small-end]
+    );
+    grid-template-rows: repeat(16, [row-start] 6rem [row-end]);
+  }
+  &_widz {
+    grid-row: row-start 1 / row-end 2;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    img {
+      height: 4rem;
+      width: 4rem;
+      object-fit: contain;
+    }
+    h2 {
+      margin-top: auto;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: white;
+      margin: 0;
+    }
+  }
+  &_widz_1 {
+    background-color: #fc9090;
+    @include respond(desktop-small) {
+      grid-column: col-small-start 1 / col-small-end 2;
+    }
+  }
+  &_widz_2 {
+    background-color: #9b8cf6;
+    @include respond(desktop-small) {
+      grid-column: col-small-start 3 / col-small-end 4;
+    }
+  }
+  &_widz_3 {
+    background-color: #fbb892;
+    /////deskto smalll
+    /// //////////////////////////////
+    @include respond(desktop-small) {
+      grid-column: col-small-start 5 / col-small-end 6;
+    }
+  }
+  &_calender {
+    grid-row: row-start 1 / row-end 4;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #686868;
+    font-family: sans-serif;
+    /////deskto smalll
+    /// //////////////////////////////
+    @include respond(desktop-small) {
+      grid-column: col-small-start 1 / col-small-end 3;
+      grid-row: row-start 6 / row-end 11;
+    }
+    @include respond(tab-mid) {
+      grid-row: row-start 9 / row-end 14;
+    }
+  }
+  &_graph {
+    grid-row: row-start 1 / row-end 3;
+    grid-column: col-small-start 1 / -1;
+    background: #ffffff;
+   // box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    // padding: 1rem;
+    @include respond(desktop-small) {
+      grid-column: col-small-start 1 /-1;
+      grid-row: row-start 1 / row-end 3;
+    }
+
+    @include respond(tab-mid) {
+      grid-row: row-start 1 / row-end 6;
+      flex-direction: column;
+    }
+    &_side {
+      display: flex;
+      flex: 2;
+    }
+    // padding: 1rem;
+    &_box {
+      // flex: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+      flex: 4;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); // Added shadow
+      border-radius: 20px; // Optional: Add a border radius for smoother corners
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+      @include respond(tab-mid) {
+      }
+      &_header {
+        margin-left: 2rem;
+        margin-top: 1rem;
+        color: #1977f3;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        select {
+          border-radius: 10px;
+          background-color: #e9e9f4;
+          // color: #1977f3;
+          color: #f9b995;
+          padding: 0.2rem;
+          border: none;
+          margin-left: auto;
+          width: 100%;
+          margin-right: 15px;
+          &:focus {
+            outline: none;
+          }
+          & option {
+            background-color: #f1f1f1;
+            color: #686868;
+            padding: 15px;
+            border: none;
+          }
+        }
+      }
+    }
+    &_side_box {
+      flex: 1;
+      max-width: 10rem;
+      height: 90%;
+      margin: auto 0.3rem;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      align-items: flex-start;
+      justify-content: flex-start;
+      box-sizing: border-box;
+
+      img {
+        height: 4rem;
+        width: 4rem;
+        object-fit: contain;
+      }
+      p {
+        margin-top: auto;
+        color: #2e3b52;
+        font-size: small;
+        // margin-bottom: 0;
+      }
+      h2 {
+        margin-bottom: 0.5rem;
+        color: #020202;
+      }
+      h4 {
+        color: black;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+    &_side_1 {
+      background: #d2eaff;
+    }
+    &_side_2 {
+      background: #e8faea;
+    }
+  }
+  &_patient_data {
+    grid-row: row-start 4 / row-end 8;
+    grid-column: 1 / -1;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: scroll;
+    min-height: 50vh;
+    @include respond(desktop-small) {
+      grid-column: col-small-start 1 / col-small-end 6;
+      grid-row: row-start 12 / row-end 16;
+    }
+    @include respond(tab-mid) {
+      grid-row: row-start 15 / row-end 19;
+    }
+    // @include respond(tab-mid){
+    //   grid-row: row-start 3 / row-end 7;
+    // }
+    &_header {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: #1977f3;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      input {
+        border-radius: 20px;
+        border: none;
+        background-color: #efeffb;
+        color: #1977f3;
+        padding: 0 0.4rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+  &_patient_chart {
+    grid-row: row-start 4 / row-end 8;
+    background: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  
+    // Scrollbar styles
+    &::-webkit-scrollbar {
+      width: 4px; // Set the width of the scrollbar
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: gray; // Scrollbar thumb color
+      border-radius: 10px; // Rounded edges for the scrollbar thumb
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #0e5bb5; // Darker shade when hovered
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1; // Scrollbar track color
+      border-radius: 10px;
+    }
+  
+    @include respond(desktop-small) {
+      grid-column: col-small-start 4 / col-small-end 6;
+      grid-row: row-start 4 / row-end 9;
+    }
+    @include respond(tab-mid) {
+      grid-row: row-start 9 / row-end 14;
+    }
+  
+    &_header {
+      margin-left: 2rem;
+      margin-top: 1rem;
+      color: #1977f3;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+  
+      select {
+        border-radius: 10px;
+        background-color: #e9e9f4;
+        color: #1977f3;
+        padding: 0.2rem;
+        border: none;
+  
+        &:focus {
+          outline: none;
+        }
+  
+        & option {
+          background-color: #f1f1f1;
+          color: #686868;
+          padding: 5px;
+          border: none;
+        }
+      }
+    }
+  }
+  
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .MuiDayCalendar-weekContainer {
+    height: 2rem;
+    button {
+      height: 5rem;
+    }
+  }
+}
+
+.margin_left_auto {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.filterContainer {
+  display: flex;
+  gap: 0.5rem; /* Adjust spacing between dropdowns */
+  margin-left: auto; /* Push the dropdowns to the right */
+}
+

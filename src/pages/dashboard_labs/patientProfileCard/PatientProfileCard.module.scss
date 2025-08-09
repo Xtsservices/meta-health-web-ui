@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px 0;
+  width: 90%;
+  border-radius: 12px;
+  // justify-content: space-around;
+  border: 2px solid #d8e7fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.name {
+  font-weight: bold;
+  color: #0070f3;
+  align-items: center;
+  margin: 0;
+  padding-top: 0.2rem;
+  text-transform: uppercase;
+}
+.details,
+.datetime {
+  margin: 0 2rem;
+}
+
+.details p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+.datetime p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 400;
+}
+
+.dotbox {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #0070f3;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.profile_options_walkin {
+  background-color:#2f620c
+}

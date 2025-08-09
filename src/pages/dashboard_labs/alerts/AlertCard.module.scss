@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 16px 0;
+  width: 90%;
+  border-radius: 12px;
+  justify-content: space-around;
+  border: 2px solid #d8e7fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.name {
+  font-weight: bold;
+  color: #0070f3;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.details p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 300;
+}
+
+.datetime p {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px 0;
+  font-weight: 300;
+}
+
+.button {
+  padding: 15px 0;
+  width: 10%;
+  border-radius: 1.5rem;
+  background-color: #d8e8fa;
+  border: 1px solid #3775c9;
+  cursor: pointer;
+  align-self: center;
+  font-size: 0.9rem;
+  &:hover {
+    background-color: #3775c9;
+    color: #fff;
+  }
+}

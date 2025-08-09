@@ -1,0 +1,96 @@
+.container {
+  background-color: #f9f9f9;
+  font-size: medium;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+.testName {
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+.progressBarContainer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem 0.5rem 5rem;
+}
+
+.iconButton {
+  cursor: pointer;
+  color: #1977f3; /* Default color of the icon (white) */
+  background-color: white; /* Default background color */
+  border: 1px solid #1977f3;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 0.6rem;
+}
+
+.iconButton:hover {
+  background-color: #e0e0e0;
+}
+
+.iconButton.active {
+  background-color: #1977f3; /* Active background color (orange) */
+  color: white; /* Tick color (white) */
+}
+
+.buttonLabel {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  top: 100%;
+  margin-top: 5px;
+  color: #3775c9;
+}
+.x {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.progressBar {
+  flex: 1;
+  height: 2px;
+  background-color: #d3d3d3;
+  border-radius: 4px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #3775c9;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress.pending {
+  width: 0;
+}
+
+.progress.processing {
+  width: 50%;
+}
+
+.progress.completed {
+  width: 100%;
+}
+
+.progressLabel {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  top: 100%;
+  margin-top: 1rem;
+  color: #3775c9;
+  text-transform: uppercase;
+}
+
+.active{
+  background-color: orange;
+}

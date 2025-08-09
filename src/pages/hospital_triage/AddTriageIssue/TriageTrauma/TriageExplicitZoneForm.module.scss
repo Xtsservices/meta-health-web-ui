@@ -1,0 +1,70 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  @include boxDesign();
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &_bottom {
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      @include blueButtonStyle();
+    }
+  }
+}
+
+.suggestion_pill {
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: left;
+  border-radius: 40px;
+}
+
+.container_grids {
+  display: flex;
+  min-width: 70%;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2.75rem;
+}
+
+.gridItem {
+  grid-column: span 1;
+  padding-inline: 1.5rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

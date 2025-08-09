@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+.containerDropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #65c2f6;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0 2rem;
+}
+.containerDropdown__name {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.arrow {
+  color: white !important;
+}

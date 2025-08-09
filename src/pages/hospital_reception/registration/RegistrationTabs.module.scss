@@ -1,0 +1,38 @@
+
+.tabsContainer {
+    background-color: #ebe6e6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .tabHeaders {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .tabHeaders button {
+    background-color: transparent; 
+    border: none; 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1; 
+    text-align: center;
+  }
+  
+  .tabHeaders button.active {
+    color: #000;
+    border-bottom: 3px solid #000;
+  }
+  
+  .tabHeaders button:not(.active) {
+    color: #777;
+  }
+  
+  .tabContent {
+    padding: 20px 0;
+    color: #000;
+  }
+  

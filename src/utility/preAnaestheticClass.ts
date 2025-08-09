@@ -1,0 +1,177 @@
+export class PreAnaestheticClass {
+    [key: string]: any;
+    name: string;
+    age: string;
+    sex: string;
+    weight: string;
+    height: string;
+    OT: string;
+    unit: string;
+    date: string;
+    diagnosis: string;
+    surgery: string;
+    ipNo: string;
+    diabetesMellitus: boolean;
+    tb: boolean;
+    palpitation: boolean;
+    drugSensitivity: boolean;
+    syncopalAttack: boolean;
+    cav: boolean;
+    jaundice: boolean;
+    smokingAlcoholDrugAbuse: boolean;
+    backache: boolean;
+    bleedingTendency: boolean;
+    allergy: string;
+    lastMeal: string;
+    convulsions: boolean;
+    asthma: boolean;
+    breathlessness: boolean;
+    anaestheticExposure: boolean;
+    hypertension: boolean;
+    ischemicHeartDiseases: boolean;
+    hospitalisation: boolean;
+    anyOther: string;
+    presentMedication: string;
+    coughSputum: string;
+    built: string;
+    hydration: boolean;
+    paltor: boolean;
+    cyanosis: boolean;
+    np: boolean;
+    clubbing: boolean;
+    pedalEdema: boolean;
+    ascitis: boolean;
+    nose: boolean;
+    tmMovement: boolean;
+    shortNeck: boolean;
+    goitre: boolean;
+    murmurs: boolean;
+    cardiacEnlargements: boolean;
+    liverSpleen: boolean;
+    oralCavity: string;
+    mouthOpening: string;
+    teeth: string;
+    trachea: string;
+    cervicalSpineMovement: string;
+    mallampatiGrade: string;
+    spine: string;
+    lungs: string;
+    bp: string;
+    pulseRate: string;
+    rytm: string;
+    rr: string;
+    temperature: string;
+    heartSounds: string
+    hb: string;
+    hiv: boolean;
+    bt: string;
+    ct: string;
+    prothrombinTime: string;
+    urineAlbuminSugar: string;
+    bloodSugar: string;
+    bloodGroup: string;
+    serumCreatinine: string;
+    serumElectrolytes: string;
+    lft: string;
+    chestXRay: string;
+    ecg: string;
+    echo: string;
+    other: string;
+    opinion: string;
+    asaGrade: string;
+    instructions: string;
+
+    constructor () {
+        this.name = '';
+        this.age= '';
+        this.sex= '';
+        this.weight= '';
+        this.height= '';
+        this.OT= '';
+        this.unit= '';
+        this.date= '';
+        this.diagnosis= '';
+        this.surgery= '';
+        this.ipNo= '';
+        this.diabetesMellitus= false;
+        this.tb= false;
+        this.palpitation= false;
+        this.drugSensitivity= false;
+        this.syncopalAttack= false;
+        this.cav= false;
+        this.jaundice= false;
+        this.smokingAlcoholDrugAbuse= false;
+        this.backache= false;
+        this.bleedingTendency= false;
+        this.allergy= '';
+        this.lastMeal= '';
+        this.convulsions= false;
+        this.asthma= false;
+        this.breathlessness= false;
+        this.anaestheticExposure= false;
+        this.hypertension= false;
+        this.ischemicHeartDiseases= false;
+        this.hospitalisation= false;
+        this.anyOther= '';
+        this.presentMedication= '';
+        this.coughSputum= '';
+        this.built= 'moderate';
+        this.hydration= false;
+        this.paltor= false;
+        this.cyanosis= false;
+        this.np= false;
+        this.clubbing= false;
+        this.pedalEdema= false;
+        this.ascitis= false;
+        this.nose= false;
+        this.tmMovement= false;
+        this.shortNeck= false;
+        this.goitre= false;
+        this.murmurs= false;
+        this.cardiacEnlargements= false;
+        this.liverSpleen= false;
+        this.oralCavity= '';
+        this.mouthOpening= '';
+        this.teeth= '';
+        this.trachea= '';
+        this.cervicalSpineMovement= '';
+        this.mallampatiGrade= '';
+        this.spine= '';
+        this.lungs= '';
+        this.bp= '';
+        this.pulseRate= '';
+        this.rytm= '';
+        this.rr= '';
+        this.temperature= '';
+        this.heartSounds= ''
+        this.hb= '';
+        this.hiv= false;
+        this.bt= '';
+        this.ct= '';
+        this.prothrombinTime= '';
+        this.urineAlbuminSugar= '';
+        this.bloodSugar= '';
+        this.bloodGroup= '';
+        this.serumCreatinine= '';
+        this.serumElectrolytes= '';
+        this.lft= '';
+        this.chestXRay= '';
+        this.ecg= '';
+        this.echo= '';
+        this.other= '';
+        this.opinion= '';
+        this.asaGrade= '';
+        this.instructions= '';
+    }
+
+    updateProperty(propertyName: any, value: any): void {
+        if (this.hasOwnProperty(propertyName)) {
+            // Update the property if it exists
+            this[propertyName] = value;
+        } else {
+            // Handle the case when the property doesn't exist
+            console.error(`Property ${propertyName} does not exist in MyClass`);
+        }
+    }
+}
+

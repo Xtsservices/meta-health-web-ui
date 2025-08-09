@@ -1,0 +1,103 @@
+.container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .topSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .todayButton {
+    background-color: #ffb400;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff9800;
+    }
+  }
+  
+  .dateRange {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .calendarIcon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .datePickerWrapper {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+  }
+  
+  .datePicker label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .customDatePicker {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 14px;
+  }
+  
+  .invoiceTable {
+    width: 100%;
+  }
+  
+  .MuiPaper-root {
+    background-color: white;
+  }
+  
+  .MuiTableCell-root {
+    font-size: 16px;
+  }
+  
+  .MuiTableRow-root:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  .MuiTableRow-root:nth-child(even) {
+    background-color: #e0e0e0;
+  }
+  
+  .uploadButton {
+    background-color: #007bff;
+    color: #fff;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  .headerCell {
+    background-color: #023f80;
+    color: #fff !important;
+  
+  }
+  

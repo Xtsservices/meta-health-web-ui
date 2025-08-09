@@ -1,0 +1,13 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  @include boxDesign();
+  min-height: calc(100% - 0.75rem);
+  padding: 1rem;
+  //   padding-bottom: 0;
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}

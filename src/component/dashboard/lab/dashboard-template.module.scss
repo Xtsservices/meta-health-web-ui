@@ -1,0 +1,130 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  @include boxDesign();
+  width: 100%;
+  height: auto;
+  min-height: 97%;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > * {
+    box-sizing: border-box;
+  }
+
+  &_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_item {
+      padding-block: 1rem;
+      padding-inline: 2rem;
+      @include boxDesign();
+    }
+  }
+
+  &_card {
+    @include boxDesign();
+    background-color: transparent;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+  }
+
+  &_row {
+    display: flex;
+    flex-direction: row;
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+    gap: 1rem;
+    justify-content: center;
+    &_item {
+      @include boxDesign();
+      padding-block: 0.5rem;
+      padding-inline: 2rem;
+      flex: 1;
+    }
+  }
+
+  &_chart {
+    position: relative;
+  }
+
+  &_calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .MuiDayCalendar-weekContainer {
+    height: 2rem;
+    button {
+      height: 5rem;
+    }
+  }
+}
+
+.heading {
+  @include headerFont();
+}
+
+.margin_left_auto {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.clearBoxShadow {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.justifyLeft {
+  justify-content: start;
+}
+
+.container_fixed_notifications {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &_count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #1977f3;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 2px;
+  }
+}

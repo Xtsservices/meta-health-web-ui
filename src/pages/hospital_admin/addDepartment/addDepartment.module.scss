@@ -1,0 +1,284 @@
+.container {
+  padding: 1rem;
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-self: stretch;
+  align-items: flex-start;
+  background: transparent;
+  //   background: #ffffff;
+  border-radius: 8px;
+  &_department {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+  }
+}
+// .card {
+//   position: relative;
+//   min-height: 14rem;
+//   max-width: 12rem;
+//   min-width: 12rem;
+//   //   background-color: red;
+//   border-radius: 20px;
+//   border: 1px solid #e6e6e6;
+//   background: #fff;
+//   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+//   display: flex;
+//   // padding: 1rem;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+//   .tag {
+//     width: 5rem;
+//     height: 2rem;
+//     background-color: orange;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 1rem;
+//     transform: translateX(-10%);
+//     color: white;
+//   }
+//   .edit {
+//     position: absolute;
+//     top: 20px;
+//     right: 20px;
+//     cursor: pointer;
+//   }
+
+//   img {
+//     height: 6rem;
+//     width: 6rem;
+//     object-fit: cover;
+//     border-radius: 50%;
+//   }
+
+//   .staff {
+//     padding: 0.4rem;
+//     border-radius: 40px;
+//     background: #1fb84a;
+//     color: white;
+//     margin-bottom: 5px;
+    
+    
+//   }
+// }
+
+
+.card {
+  position: relative;
+  height: 18rem; /* Set a fixed height */
+  width: 12rem;  /* Set a fixed width */
+  border-radius: 40px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card .tag {
+  width: 5rem;
+  height: 2rem;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transform: translateX(-10%);
+  color: white;
+}
+
+
+
+.card img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Add margin for better spacing */
+}
+
+.card .staff {
+  padding: 0.4rem;
+  border-radius: 40px;
+  background: #1fb84a;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  text-align: center;
+}
+
+.card p { 
+  /* Controls for long text */
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+
+
+
+
+.department_dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  .dialog_search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(183, 177, 177);
+    border-top: 1px solid rgb(183, 177, 177);
+    input {
+      border: none;
+      height: 2rem;
+      padding: 0.5rem;
+      width: 80%;
+      font-size: 16px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .dialog_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    & > * {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.page_navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  align-items: center;
+  & > * {
+    margin-right: 0.5rem;
+  }
+  select {
+    margin-left: 0.5rem;
+    border: none;
+    cursor: pointer;
+    
+  }
+}
+.margin_right_auto {
+  margin-right: auto;
+}
+
+// ===================ward card====================
+.wardInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wardInfoCard {
+  display: flex; /* Set the card as a flex container */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: space-between; /* Distribute space between children */
+  width: 200px;
+  height: 300px; /* Set a fixed height for uniformity */
+  border: 2px solid #0D6E8E;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+
+
+
+.wardInfoNewTag1 {
+  background-color: #0D6E8E;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+
+.wardInfoCardIcon {
+  width: 120px;
+  height: 120px;
+}
+
+.wardInfoCardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+text-align: center !important;
+}
+
+.wardInfoBedInfo {
+  font-size: 12px;
+  margin: 5px 0;
+  color: white;
+}
+
+
+
+.wardInfoCardTop {
+  display: flex;
+  justify-content: space-between; /* This distributes space between children */
+  align-items: center; /* Align items vertically centered */
+  padding: 8px;
+  position: relative;
+}
+
+
+
+.wardInfoIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.wardInfoCardContent {
+  background-color: #0D6E8E;
+  padding: 10px;
+  color: #fff;
+  margin-top: auto; /* This pushes the content to the bottom */
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack its content vertically */
+  justify-content: flex-end; /* Push text to the bottom */
+}
+
+.edit {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+  cursor: pointer;
+}

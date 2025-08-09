@@ -1,0 +1,333 @@
+.main_container {
+  height: auto;
+  width: 100%;
+}
+.container {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  &_header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // justify-content: space-between;
+    margin-bottom: 10px;
+    h4 {
+      margin: 0;
+    }
+  }
+  &_top {
+    height: 4rem;
+    background-color: #f9edc4;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    column-gap: 2rem;
+    &_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+  }
+}
+.history_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  height: auto;
+  column-gap: 2rem;
+  width: 100%;
+  & > * {
+    flex: 1;
+    // background-color: red;
+  }
+  .container_left {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    // padding: 2rem;
+    flex: 1;
+    & > * {
+      padding: 2rem 1rem;
+    }
+    .surgeries,
+    .allergies,
+    .prescribed {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 6rem;
+      background-color: blue;
+      border-radius: 24px;
+      background: #fde8f0;
+      margin-bottom: 1rem;
+      &_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+          height: 3rem;
+          width: 3rem;
+          flex: 1;
+          //   margin-right: 1rem;
+          object-fit: contain;
+        }
+        h4 {
+          flex: 4;
+        }
+      }
+      &_info {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+      }
+    }
+    .allergies {
+      background: #d8f3f5;
+      img {
+        margin-right: 1rem;
+      }
+    }
+    .prescribed {
+      background: #fffce4;
+      img {
+        margin-right: 1rem;
+      }
+    }
+    // ///////////////////Allergies//////////////////////////////
+  }
+  .container_center {
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 15rem;
+    .blood {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      column-gap: 1rem;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      & > * {
+        flex: 1;
+        min-height: 8rem;
+        max-width: 20rem;
+      }
+      &_group,
+      &_pressure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        // background: #c5ecf7;
+        text-align: center;
+        h3,
+        h4 {
+          margin: 0;
+        }
+      }
+      .blood_icon,
+      .pressure_icon {
+        position: relative;
+        img {
+          height: 6rem;
+          width: 6rem;
+          object-fit: cover;
+        }
+      }
+      .blood_label,
+      .pressure_label {
+        // position: absolute;
+        color: white;
+        transform: translateY(-200%);
+      }
+      .pressure_label {
+        // position: absolute;
+        transform: translateY(-200%) translateX(160%);
+        color: red;
+      }
+    }
+    .body_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 6rem;
+      border-radius: 24px;
+      background: #c5ecf7;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+  }
+  // //////////////////Right/////////////////////
+  .container_right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 15rem;
+    flex: 1;
+    & > * {
+      padding: 2rem 1rem;
+    }
+
+    .drugs,
+    .health {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 6rem;
+      border-radius: 24px;
+      background: #fde8f0;
+      margin-bottom: 1rem;
+      &_header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+          height: 3rem;
+          width: 3rem;
+          flex: 1;
+          //   margin-right: 1rem;
+          object-fit: contain;
+        }
+        h4 {
+          flex: 4;
+        }
+      }
+      &_info {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(10%);
+      }
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // max-height: 1rem;
+        height: auto;
+        img {
+          height: 2rem;
+          width: 2rem;
+          object-fit: contain;
+          flex: 0;
+        }
+        .health_info_subheader {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          //   margin-bottom: 2rem;
+          p {
+            margin: 0.2rem 1rem;
+          }
+        }
+      }
+    }
+    .drugs {
+      //   border-radius: 24px;
+      background: #f0f0f0;
+    }
+    .health {
+      border-radius: 24px;
+      background: #e1ffeb;
+      img {
+        // margin-right: 1rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    // ////////////////////////////////////////////////
+    //////////////////////////////////////////////
+    .cancer_lumps {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      column-gap: 2rem;
+      margin: 0 auto;
+      // margin: 0;
+      & > * {
+        flex: 1;
+        // min-height: 8rem;
+        max-width: 20rem;
+        height: 8rem;
+        padding: 1rem;
+      }
+      .cancer,
+      .lumps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 24px;
+        background: #c5ecf7;
+        text-align: center;
+        img {
+          height: 2rem;
+          width: 2rem;
+          object-fit: contain;
+        }
+        & > * {
+          margin-bottom: 0.4rem;
+        }
+        h3,
+        h4 {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .family,
+  .infection,
+  .addictions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    height: 12rem;
+    padding: 1rem;
+    &_container {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      box-sizing: border-box;
+      & > * {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4,
+        h5 {
+          margin: 0;
+        }
+      }
+      img {
+        height: 2rem;
+        width: 2rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+  .family {
+    border-radius: 24px;
+    background: #e9ffdc;
+  }
+  .infection {
+    border-radius: 24px;
+    background: #fee;
+  }
+  .addictions {
+    border-radius: 24px;
+    background: #ebe4fa;
+  }
+}

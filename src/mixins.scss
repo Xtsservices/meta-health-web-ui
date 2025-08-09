@@ -1,0 +1,23 @@
+@mixin boxDesign() {
+  background: #fff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+@mixin headerFont() {
+  color: #1977f3;
+  font-weight: 600;
+}
+
+@mixin blueButtonStyle() {
+  box-sizing: border-box;
+  background-color: rgb(31, 117, 246);
+  color: white;
+  padding-block: 0.75rem;
+  padding-inline: 1.25rem;
+  border-radius: 40px;
+  border: none;
+  min-width: 7rem;
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+
+.addedbyContainer {
+  width: 100%;
+  height: 98%;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  overflow-y: scroll;
+}
+
+.addedbyContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+.addedbyContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.addedbyContainer::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.addedbyContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.addedbyContainer_profile {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+
+
+.addedbyProfile_image {
+  display: flex;
+  align-items: flex-start;
+}
+
+.addedbyImage_container_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  position: relative;
+}
+
+.addedbyImage_container_image img {
+  position: absolute;
+}
+
+.addedbyImage_container_image svg {
+  position: absolute;
+}
+
+.addedbyImage_container img {
+  height: 90%;
+  object-fit: contain;
+  margin: 0rem auto;
+  width: 80%;
+}
+
+.addedbyProfile {
+  display: flex;
+  justify-content: center;
+}
+
+.addedbyProfile svg {
+  height: 4rem;
+  width: 4rem;
+}
+
+.addedbyImage_container input {
+  display: none;
+}
+
+.addedbyImage_container label {
+  margin: 1rem 0;
+  width: 70%;
+  border: 1px solid #1977f3;
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1977f3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addedbyProfile_form {
+  flex: 4;
+}
+
+

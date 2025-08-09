@@ -1,0 +1,82 @@
+@import "/src/breakpoint.scss";
+@import "/src/mixins.scss";
+
+.container {
+  @include boxDesign();
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 0.75rem);
+  margin-top: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &_bottom {
+    display: flex;
+    width: 100%;
+    align-self: end;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    button {
+      @include blueButtonStyle();
+    }
+  }
+
+  input[type="checkbox"] {
+    color: red !important;
+    background-color: blue !important;
+  }
+}
+
+.container_grids {
+  display: flex;
+  min-width: 70%;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 0.75rem;
+  button {
+    @include blueButtonStyle();
+    text-transform: capitalize;
+  }
+}
+
+.gridItem {
+  grid-column: span 1;
+  padding-inline: 1.5rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridItemFull {
+  grid-column: span 2;
+  padding-inline: 1.5rem;
+  align-self: center;
+  width: 75%;
+  display: flex;
+  gap: 1rem;
+  > * {
+    flex-shrink: 0;
+  }
+}
+
+.imageStyle {
+  border-radius: 100%;
+  clip-path: circle(49% at 50% calc(50% - 4px));
+}

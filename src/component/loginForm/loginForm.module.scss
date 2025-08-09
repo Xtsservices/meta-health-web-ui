@@ -1,0 +1,87 @@
+@import './../../breakpoint.scss';
+html,
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+.form {
+  width: 80%;
+  height: auto;
+  padding: 2rem;
+  background-color: red;
+  margin: auto auto;
+  //   margin-top: 5rem;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+  &_heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+  &_group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+    & label {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    & input {
+      box-sizing: border-box;
+      border-radius: 20px;
+      height: 3rem;
+      margin: 5px 0;
+      padding: 1rem;
+      border: 1px solid #bfbfbf;
+      font-size: 1rem;
+      //   &:invalid {
+      //     border: 1px solid red;
+      //   }
+      &::placeholder {
+        color: #bfbfbf;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &_message {
+      color: red;
+    }
+  }
+  button {
+    background: #f59706;
+    border-radius: 40px;
+    height: 3rem;
+    border: 0px solid;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.password_input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  height: 3rem;
+  border-radius: 20px;
+  & input {
+    flex: 3;
+    // border: none !important;
+  }
+  svg {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+}

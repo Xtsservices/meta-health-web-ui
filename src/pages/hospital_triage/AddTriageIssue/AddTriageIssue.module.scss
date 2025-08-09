@@ -1,0 +1,106 @@
+@import './../../../breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  width: 100%;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+
+  h3 {
+    padding-bottom: 1rem;
+    font-family: Helvetica;
+  }
+
+  &_bottom {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      @include blueButtonStyle();
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &_options {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+    @include respond(tab-mid) {
+      flex-direction: column;
+      & > * {
+        margin-bottom: 1rem;
+      }
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      flex-basis: 16rem;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-sizing: border-box;
+      color: white;
+      cursor: pointer;
+      @include respond(tab-mid) {
+        width: 20rem;
+      }
+      img {
+        height: 6rem;
+        width: 6rem;
+        object-fit: contain;
+      }
+      & > * {
+        margin-bottom: 0.2rem;
+      }
+      p {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+    .card_chest {
+      background: rgb(255, 115, 115);
+    }
+    .card_stroke {
+      background: rgb(110, 110, 252);
+    }
+    .card_unconcious {
+      background-color: rgb(255, 219, 120);
+    }
+  }
+}

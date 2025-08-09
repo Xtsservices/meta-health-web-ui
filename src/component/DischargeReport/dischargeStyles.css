@@ -1,0 +1,271 @@
+/* MyDocument.css */
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .document {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  @media(min-width: 776px){
+    .patient-details-container {
+      display:flex;
+    justify-content: space-between;
+    padding: 0;
+    }
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: white;
+  }
+  
+  .bg-success {
+    background-color: #d4edda;
+  }
+  
+  .header {
+    font-size: 12px;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .header-logo {
+    width: 15%;
+  }
+  
+  @media(max-width: 768px){
+    .header-logo {
+      width: 35%;
+    }
+  }
+  
+  .Discharge-report-heading {
+    font-size: 26px;
+    color: #1F7AF3;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center; /* Centers the heading */
+    margin: auto;
+  
+  }
+  
+  @media(max-width: 768px){
+    .Discharge-report-heading {
+      font-size: 12px;
+      color: #1F7AF3;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      text-align: center; /* Centers the heading */
+      margin: auto;
+    
+    }
+  }
+  
+  .report-info-list{
+    list-style-type: none;
+  }
+  
+  
+  
+  @media(min-width: 768px){
+    .report-info-address{
+      width: 50%;
+    }
+  }
+  
+  .other-info-list{
+    list-style-type: none;
+  
+  }
+  .body-content {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  
+  .footer {
+    font-size: 12px;
+    text-align: center;
+    color: grey;
+  }
+  
+  
+  .hr-line{
+    border: 1px solid gray;
+  }
+  
+  .report-info{
+  padding: 2px;
+  }
+  .info-label{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  @media(max-width: 768px){
+    .info-label{
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  
+  .info-value{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  @media(max-width: 768px){
+    .info-value{
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  
+  .sub-headings-bgm{
+    background-color: #1F7AF3;
+    padding: 2px;
+    color: white;
+  }
+  
+  .footer-bold-text{
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .table-image{
+    width: 50px;
+    height: 50px;
+  }
+  .box-1{
+    background-color: #95D5EA;
+    border-radius: 8px;
+    padding: 6px;
+    min-height: 300px;
+    
+  }
+  
+  .med-his-box-con{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+  
+  }
+  .med-his-box-img{
+  height: 50px;
+  width: 50px;
+  }
+  .med-his-box-img-mother{
+    height: 60px;
+    width: 60px;
+    }
+  .med-his-box-ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  .li-underline{
+    text-decoration: underline;
+  }
+  .box-2{
+    background-color: #F2B5F4;
+    border-radius: 8px;
+    padding: 6px;
+    
+    min-height: 300px;
+    
+  }
+  .box-3{
+    background-color: #BAA5F8;
+    border-radius: 8px;
+    padding: 6px;
+    
+    min-height: 300px;
+    
+  }
+  .box-4{
+    background-color: #67D1DD;
+    border-radius: 8px;
+    padding: 6px;
+    
+    min-height: 300px;
+    
+    
+  }
+  
+  
+  .relative-container {
+    position: relative;
+   
+  }
+  
+  @media(min-width: 768px){
+    .relative-container{
+      display: flex;
+    justify-content: center;
+    }
+  }
+  
+  
+  .button-container {
+    position: absolute;
+    top: 24%;
+    right: 49%;
+    transform: translate(50%, 50%);
+    z-index: 10; /* Adjust if necessary */
+  }
+  
+  @media(max-width: 768px){
+    .button-container{
+      display: none;
+    }
+  }
+  
+  .med-his-box-con {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  
+  .med-his-box-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .med-his-box-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .li-underline {
+    text-decoration: underline;
+  }
+  
+  .box-1, .box-2, .box-3, .box-4 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .float-four-container {
+    height: 150px;
+    width: 150px;
+  }
+  

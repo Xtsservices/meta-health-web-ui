@@ -1,0 +1,235 @@
+.container {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  width: 98%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-self: stretch;
+  align-items: center;
+  background: transparent;
+  // justify-content: center;
+  //   background: #ffffff;
+  border-radius: 8px;
+  &_department {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+  }
+}
+.card {
+  height: 12rem;
+  max-width: 20rem;
+  min-width: 20rem;
+  //   background-color: red;
+  border-radius: 40px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  &:first-child {
+    // margin-left: auto;
+  }
+  .staff {
+    padding: 0.4rem;
+    border-radius: 40px;
+    background: #1fb84a;
+    color: white;
+  }
+  &_image {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 4.2rem;
+      width: 4.2rem;
+      object-fit: fill;
+      border-radius: 50%;
+    }
+  }
+  h2 {
+    margin: 0;
+  }
+}
+.card_graph_container {
+  align-self: stretch;
+  height: 14rem;
+  //   background-color: red;
+  display: flex;
+  column-gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  .card_graph {
+    flex: 1;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    width: 482.5px;
+    height: 176px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+    &_info {
+      display: flex;
+      height: 98px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+      flex: 1 0 0;
+      font-size: 12px;
+      color: grey;
+      h4 {
+        color: var(--black, #000);
+        font-size: 24px;
+        // font-family: Mulish;
+        font-weight: 700;
+        line-height: 22px;
+        margin: 0;
+      }
+      .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    &_curve {
+      display: flex;
+      width: 140px;
+      padding: 9.8px 0px 1.96px 0px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.page_navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+  align-items: center;
+  & > * {
+    margin-right: 0.5rem;
+  }
+  select {
+    margin-left: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+
+// ===================ward card====================
+.wardInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.wardInfoCard {
+  display: flex; /* Set the card as a flex container */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: space-between; /* Distribute space between children */
+  width: 200px;
+  height: 300px; /* Set a fixed height for uniformity */
+  border: 2px solid #0D6E8E;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+
+
+
+.wardInfoNewTag1 {
+  background-color: #0D6E8E;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+
+.wardInfoCardIcon {
+  width: 120px;
+  height: 120px;
+}
+
+.wardInfoCardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+text-align: center !important;
+}
+
+.wardInfoBedInfo {
+  font-size: 12px;
+  margin: 5px 0;
+  color: white;
+}
+
+
+
+.wardInfoCardTop {
+  display: flex;
+  justify-content: space-between; /* This distributes space between children */
+  align-items: center; /* Align items vertically centered */
+  padding: 8px;
+  position: relative;
+}
+
+
+
+.wardInfoIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.wardInfoCardContent {
+  background-color: #0D6E8E;
+  padding: 10px;
+  color: #fff;
+  margin-top: auto; /* This pushes the content to the bottom */
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack its content vertically */
+  justify-content: flex-end; /* Push text to the bottom */
+}
+
+.edit {
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+  cursor: pointer;
+}

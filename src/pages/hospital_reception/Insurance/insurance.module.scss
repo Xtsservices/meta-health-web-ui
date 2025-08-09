@@ -1,0 +1,190 @@
+.boxContainer {
+  padding: 20px;
+  background-color: white;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 2rem;
+  height:100dvh; 
+  overflow: scroll;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+  border-bottom: 1px solid #CBCBCB;
+  margin-bottom: 5px;
+}
+.insuranceHeading {
+  margin-top: 35px;
+  font-weight: bold;
+  color: black;
+  font-size: 19px;
+}
+.rowcontainer {
+  display: flex;
+}
+.subContainer {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.calendar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Space between calendar and notifications */
+}
+
+.timeFrameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeFrameLabel {
+  color: darkgray;
+  font-size: 13px;
+}
+.img {
+  padding-right: 5px;
+}
+
+.tabsContainer {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabHeaders {
+  margin-bottom: 20px;
+}
+
+.tabHeaders button {
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  flex-grow: 1; /* Make buttons take equal space */
+  text-align: center; /* Center the button text */
+}
+
+.tabHeaders button.active {
+  color: #000;
+  border-bottom: 3px solid #f59706;
+}
+
+.tabHeaders button:not(.active) {
+  color: #777;
+}
+
+.tabContent {
+  padding: 20px 0; /* Only padding on top and bottom to create space, no background */
+  color: #000; /* Ensure text color is visible */
+}
+.completedIcon {
+  color: green;
+  font-size: 24px;
+}
+
+.activeStep {
+  color: blue;
+  font-weight: bold;
+}
+
+.uploadSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 2px dotted #ccc;
+  border-radius: 5px;
+}
+
+.cloudIcon {
+  color: #888;
+  font-size: 2rem;
+}
+
+.browseText {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  color: #555;
+}
+.fileInput {
+  display: none;
+}
+
+.addButton {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addIcon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.tabContentContainer {
+  max-height: 600px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 10px;
+
+}
+
+
+.timeFrameContainerIn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.timeFrameLabel {
+  font-size: 14px;
+  color: darkgray;
+}
+
+.timeFrameDate {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.datePickerContainer {
+  margin-top: 4px;
+  border: 2px solid #ffff
+}
+.calendarIn {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 15px;
+}
+.datePicker .react-datepicker__input-container input {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent; /* Optional: Make background transparent */
+}
+
+.table_head_style {
+  color:#ffffff
+}

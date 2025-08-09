@@ -1,0 +1,14 @@
+.scroll_bar_container {
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #E4E6E8;
+    
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #1976d2; /* Color */
+    border-radius: 10px;
+    height: 50%; /* Set scrollbar height */
+    position: absolute;
+  }

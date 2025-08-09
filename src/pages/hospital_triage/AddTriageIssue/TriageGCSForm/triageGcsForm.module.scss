@@ -1,0 +1,93 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  @include boxDesign();
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+  }
+}
+
+.container_flex_centered {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_heading {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.form_container {
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.row_center {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  flex: 1;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.container_chip_input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.button_container {
+  padding-top: 1.25rem;
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-left: auto;
+}
+
+.container_bottom {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    @include blueButtonStyle();
+    text-transform: capitalize;
+  }
+}

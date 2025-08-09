@@ -1,0 +1,90 @@
+@import './../../../../../../breakpoint.scss';
+
+.info_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-start;
+  button {
+    border: none;
+    background-color: #1977f3;
+    padding: 0.8rem 1rem;
+    border-radius: 35px;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    img {
+      margin-right: 0.4rem;
+    }
+  }
+}
+.vital_container {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding: 2rem 0;
+  box-sizing: border-box;
+  @include respond(desktop-small) {
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    justify-content: center;
+  }
+  .card {
+    min-height: 14rem;
+    // min-width: 20rem;
+    flex: 1;
+    background-color: red;
+    border-radius: 40px;
+    background: #4eb9f6;
+    box-shadow: 0px 10px 30px 0px rgba(78, 185, 246, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    color: #fff;
+    padding: 1rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
+    @include respond(desktop-small) {
+      max-width: 20rem;
+      min-width: 20rem;
+    }
+    &_info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h4 {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-left: 1rem;
+          height: 1.2rem;
+          width: 1.2rem;
+          object-fit: contain;
+        }
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    &_icon {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .orange {
+    background: #f79797;
+  }
+  .green {
+    background: #58ceb2;
+  }
+  .violet {
+    background: #a2bffe;
+  }
+}

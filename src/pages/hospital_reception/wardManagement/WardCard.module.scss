@@ -1,0 +1,51 @@
+.wardCard {
+  padding: 16px;
+  border-radius: 18px;
+  background-color: #E0E0E0;
+  width: 300px;
+  margin-top: 40%;
+}
+
+.detailList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.detailItem {
+  margin-bottom: 8px !important;
+  color:#252525;
+  font-size: 14px;
+  font-weight: 400 !important;
+}
+.text_style {
+  font-weight: 500;
+  color: #252525;
+}
+
+.amenitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; /* Add spacing between items */
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 6px;
+  margin-top: 16px;
+
+}
+
+.amenityItem {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 0 30%; /* Each item takes up about 30% of the row */
+  max-width: 20%; /* Ensures no item exceeds 30% width */
+  box-sizing: border-box;
+}
+
+.amenityImage {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 8px;
+}

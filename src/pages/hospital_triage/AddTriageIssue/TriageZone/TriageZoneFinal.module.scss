@@ -1,0 +1,52 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  @include boxDesign();
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 0.75rem);
+  margin-top: 1rem;
+  padding: 2rem;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &_center {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &_center p{
+    font-size: large;
+  }
+
+  &_spinner {
+    padding-top: 2rem;
+  }
+}
+
+.final_box {
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    color: white;
+    font-size: large;
+  }
+}

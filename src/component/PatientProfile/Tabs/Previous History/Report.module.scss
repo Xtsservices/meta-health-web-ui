@@ -1,0 +1,100 @@
+.container {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  &_report {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  &_header {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    // align-items: center;
+    align-items: center;
+    flex: 1 h4 {
+      margin: 0;
+    }
+    button {
+      // margin-left: 1rem;
+      margin-right: 10px;
+      // align-self: flex-start;
+    }
+  }
+  .report {
+    // justify-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+    margin-bottom: 3rem;
+    & > * {
+      height: 10rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.uploaded_box {
+  border-radius: 14px;
+  height: auto;
+  width: 10rem;
+  background: #fff;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-self: stretch;
+  font-size: 12px;
+  padding: 1rem;
+  h3,
+  h4 {
+    margin-bottom: 0.2rem;
+    margin-top: 0rem;
+    margin: 0;
+  }
+  br {
+    margin: 0;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .uploaded_box_buttons {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    border: 0.5px solid grey;
+    // border-radius: 20px;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 5px;
+
+    button {
+      border: none;
+      background-color: white;
+      flex: 1;
+      font-weight: 600;
+      color: #1977f3;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      &:first-child {
+        // border-right: 1px solid grey;
+      }
+    }
+    .delete {
+      color: red;
+    }
+  }
+}

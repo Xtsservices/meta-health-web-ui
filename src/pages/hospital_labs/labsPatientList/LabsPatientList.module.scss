@@ -1,0 +1,57 @@
+.patitentList__container {
+  
+  background-color: #fff;
+  width: 100%;
+  border-radius:40px;
+  padding: 1rem;
+  margin-top: 1rem;
+  min-height: 100vh;
+}
+
+.patitentList__container__div {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-size: larger;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.patientList {
+  margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 22px;
+    row-gap: 22px;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+}
+
+.page_navigation {
+  margin-top: 1rem;
+  width: 20rem;
+  margin-left: auto;
+  select {
+    margin: 0 1rem;
+  }
+}
+.noPatientsFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.no_patient_found_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  margin-top: 70px;
+}

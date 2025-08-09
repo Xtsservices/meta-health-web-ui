@@ -1,0 +1,55 @@
+@import './../../breakpoint.scss';
+.container {
+  height: 100vh;
+  width: 98vw;
+  box-sizing: border-box;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  &_heading {
+    align-self: center;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    @include respond(phone-big) {
+      font-size: 15px;
+      margin-top: 5rem;
+    }
+  }
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    object-fit: contain;
+  }
+  &_profile {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 600;
+    cursor: pointer;
+    img {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      margin-left: 1rem;
+    }
+  }
+}
+.yantramlogo {
+  width: 8rem;
+  object-fit: contain;
+}
+
+.tagline {
+  align-self: center;
+  object-fit: contain;
+}

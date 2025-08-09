@@ -1,0 +1,189 @@
+.appointment-slots {
+  font-family: 'Arial', sans-serif;
+  padding: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.slots-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  border-radius: 22px;
+}
+
+.day-header {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  border: 1px solid #ddd;
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.day-column {
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  font-size: 0.9rem;
+}
+
+.slot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border:1px solid green;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &.noAvailable {
+    background-color: #c7c7c7 !important;
+    color: white;
+    cursor: not-allowed;
+    border: none !important;
+  }
+
+  &.selected {
+    background-color: #007bff !important;
+    color: white;
+  }
+}
+
+.slot:hover {
+  background-color: #c2ddf9;
+}
+
+.time {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  &.noAvailable {
+    color: green !important;
+  }
+
+  &.selected {
+    color: white !important;
+  }
+}
+.noAvailableTime{
+  display: block;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+  
+}
+
+.person {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-left: 1rem;
+}
+
+
+.available {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  &.noAvailable {
+    color: green;
+  }
+
+  &.selected {
+    color: white !important;
+  }
+
+}
+.noavailable {
+  display: block;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 600;
+
+}
+
+.no-slot {
+  font-size: 0.9rem;
+  color: #888;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+.slots-table td {
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .slots-table {
+    font-size: 0.85rem;
+  }
+
+  .day-header {
+    padding: 8px;
+  }
+
+  .day-column {
+    padding: 8px;
+  }
+
+  .slot {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appointment-slots {
+    padding: 1px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .slots-table {
+    font-size: 0.85rem;
+  }
+
+  .day-header {
+    padding: 8px;
+  }
+
+  .day-column {
+    padding: 8px;
+  }
+
+  .slot {
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+
+  .no-slot {
+    padding: 6px;
+  }
+}

@@ -1,0 +1,126 @@
+@import '/src/breakpoint.scss';
+
+.injuryMarkerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+/* Canvas Container */
+.canvasContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Canvas Element */
+canvas {
+  display: block;
+  max-width: 600px;
+  aspect-ratio: 1;
+  border: 1px solid #000;
+}
+
+/* Navbar Container */
+.navbar {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* Thumbnail Images */
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  border: 2px solid #007bff;
+}
+
+/* Controls Container */
+.controls {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* Body Part Button */
+.bodyPartButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.bodyPartButton:hover {
+  background-color: #0056b3;
+}
+
+/* Selected Part Display */
+.selectedPart {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/* Media Queries for Different Screen Sizes */
+@include respond(tab-mid) {
+  .canvas-container {
+    justify-content: center;
+  }
+
+  canvas {
+    height: 300px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+
+  .bodyPartButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .selectedPart {
+    font-size: 16px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 2rem;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.controlsContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+input[type='color'] {
+  width: 3rem;
+}

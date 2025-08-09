@@ -1,0 +1,107 @@
+.sidebar {
+  width: 22%;
+  min-width: 250px;
+  background-color: #023f80;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  padding: 1rem 0;
+  margin-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar__list li a {
+  display: flex;
+  align-items: center;
+  padding: 13px 18px;
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar__list li:hover {
+  background-color: #f59706;
+  border-radius: 28px;
+}
+
+.sidebar__list li span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.sidebar__line {
+  margin-top: 1.5rem;
+  // margin
+  border: 0.5px solid;
+  background-color: #ffffff;
+}
+
+.sidebar__footer {
+  list-style-type: none;
+  padding-top: 2rem;
+}
+
+.sidebar__footer li a {
+  display: flex;
+  align-items: center;
+  padding: 13px 18px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar__footer li:hover {
+  background-color: #f59706;
+  border-radius: 28px;
+}
+
+.sidebar__footer li span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.active {
+  background-color: #f59706;
+  border-radius: 28px;
+  color: white;
+}
+.logoutButton {
+  display: flex;
+  align-items: center;
+  padding: 5px 18px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: left;
+
+  &:hover {
+    background-color: #f59706;
+    border-radius: 28px;
+  }
+
+  span {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

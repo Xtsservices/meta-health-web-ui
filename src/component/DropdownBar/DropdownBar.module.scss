@@ -1,0 +1,27 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+// className="flex justify-between bg-blue-200 rounded-full p-2 cursor-pointer my-2"
+.DropdownBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d2e4f9;
+  border-radius: 50px;
+  padding: 0 15px 0 15px;
+  cursor: pointer;
+  margin: 4px 0 4px 0;
+}
+
+.DropdownBar p{
+ display: flex;
+ align-self: center;
+ margin:10px;
+}
+// className={expanded ? 'rotate-180 duration-200 mr-3' : ' mr-3'}
+.DropdownArrow {
+  rotate: 180deg;
+  transition-duration: 2s;
+  margin-right: 5px;
+}

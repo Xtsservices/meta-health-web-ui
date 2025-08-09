@@ -1,0 +1,189 @@
+@import "./../../../breakpoint.scss";
+.container {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  overflow-y: scroll;
+  //   overflow-x: hidden
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1rem;
+    // background-color: red;
+    .header_button {
+      border: none;
+      background: #1977f3;
+      width: auto;
+      padding: 1rem 2rem;
+
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 1rem;
+      border-radius: 35px;
+      color: white;
+      font-weight: 500;
+      margin-left: auto;
+      cursor: pointer;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.profile_container {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(#d2e4f9, #f2f8ff);
+  margin-top: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+  .profile_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 6rem;
+    flex: 1;
+    // background-color: orange;
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 4px solid #1977f3;
+    }
+    svg {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 4px solid grey;
+      fill: grey;
+    }
+  }
+  .profile_info {
+    flex: 3;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    // background-color: yellow;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: #787878;
+    &_main {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+    p {
+      margin: 5px 0;
+    }
+    h3 {
+      color: black;
+      span {
+        color: #787878;
+      }
+    }
+    &_left {
+      flex: 2;
+      //   background-color: rebeccapurple;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &_right {
+      flex: 3;
+      p {
+        margin: 10px 0;
+      }
+      //   background-color: red;
+    }
+  }
+  .profile_options {
+    padding: 2rem;
+    box-sizing: border-box;
+    flex: 1;
+    // background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    &_inpatient {
+      padding: 0.2rem 0.5rem;
+      color: #2f620c;
+      border-radius: 30px;
+      background: #def2d0;
+    }
+    button {
+      border: none;
+      margin-right: 1rem;
+      color: black;
+      cursor: pointer;
+    }
+    .discharge_button {
+      background-color: #f90;
+      padding: 0.4rem 0.5rem;
+      border-radius: 35px;
+      color: white;
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////////
+/// //////////////////////////////////////////////////////////
+/// Tabs///////////////////////////////////////////////////////
+.profile_tabs {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  @include respond(tab-mid) {
+    max-width: 46rem;
+  }
+  @include respond(tab-port) {
+    max-width: 38rem;
+  } // overflow-x: scroll;
+}

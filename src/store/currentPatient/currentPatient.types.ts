@@ -1,0 +1,6 @@
+const CURR_PATIENT_ACTION_TYPE = {
+  SET_CURR_PATIENT: "curr_patient/SET_CURR_PATIENT",
+  SET_TIMELINE: "curr_patient/SET_TIMELINE"
+};
+
+export default CURR_PATIENT_ACTION_TYPE;

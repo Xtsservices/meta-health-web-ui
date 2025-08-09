@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  height: 98%;
+  background: #ffffff;
+  margin-top: 1rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  overflow-y: scroll;
+  //   overflow-x: hidden
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &_header {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 1rem;
+    // background-color: red;
+    button {
+      border: none;
+      background: #1977f3;
+      width: auto;
+      padding: 1rem 2rem;
+
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-left: 1rem;
+      border-radius: 35px;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      img {
+        margin-right: 0.5rem;
+      }
+    }
+    select {
+      height: 2.5rem;
+      border-radius: 35px;
+      padding: 0 0.5rem;
+      min-width: 10rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .containerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+
+    .containerRight {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        border: none;
+        background: #1977f3;
+        width: auto;
+        padding: 1rem 2rem;
+
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 1rem;
+        border-radius: 35px;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+      select {
+        height: 2.5rem;
+        margin-left: auto;
+        border-radius: 35px;
+        padding: 0 0.5rem;
+        margin-right: 10px;
+        min-width: 10rem;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    // background-color: red;
+  }
+  &_card {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 22px;
+    row-gap: 22px;
+    box-sizing: border-box;
+  }
+}
+
+.page_navigation {
+  width: 20rem;
+  margin-left: auto;
+  select {
+    margin: 0 1rem;
+  }
+}
+
+.margin_left_auto {
+  margin-left: auto !important;
+}
+
+.noPatientsFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #555;
+  font-weight: bold;
+}
+.no_patient_found_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  margin-top: 70px;
+}

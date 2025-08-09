@@ -1,0 +1,111 @@
+@import '/src/breakpoint.scss';
+@import '/src/mixins.scss';
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+  @include respond(tab-land) {
+    flex-wrap: wrap;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+}
+
+.grid_item {
+  column-span: 1fr;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.chart_box {
+  min-height: 150px;
+  min-width: 150px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.container_chart_box {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legend_circle {
+  height: 0.75rem;
+  width: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  border-radius: 100%;
+}
+
+.legend_text {
+  display: flex;
+  flex: 1;
+  text-wrap: nowrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.legend_row {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.legend_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-inline: 2rem;
+  padding-top: 2rem;
+  @include respond(tab-land) {
+    padding-inline: 0.25rem;
+  }
+}
+
+.legend_text_ot{
+  display: flex;
+  flex: 1;
+  text-wrap: nowrap;
+  gap: 1rem;
+}
+
+.myscheduleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Take full width of the parent container */
+  max-width: 1200px; /* Optional: Limit maximum width for large screens */
+  padding: 20px; /* Add padding for spacing */
+  margin: 0 auto; /* Center the container */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+@media (max-width: 768px) {
+  .myscheduleContainer {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .myscheduleContainer {
+    padding: 5px; /* Further reduce padding for very small screens */
+  }
+}

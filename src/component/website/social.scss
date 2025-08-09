@@ -1,0 +1,15 @@
+@import "../../breakpoint.scss";
+
+.social-container {
+  margin-left: 50px;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+
+  @include respond(phone-big) {
+    justify-content: center;
+  }
+}

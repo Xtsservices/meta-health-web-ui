@@ -1,0 +1,52 @@
+.container {
+  height: auto;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  // background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: stretch;
+  &_info {
+    flex: 3;
+    // background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    .info_header {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        border: none;
+        background-color: #1977f3;
+        padding: 0.8rem 1rem;
+        border-radius: 35px;
+        color: white;
+        cursor: pointer;
+        img {
+          margin-right: 0.4rem;
+        }
+      }
+    }
+    .info_list {
+      flex: 4;
+    }
+  }
+  &_gif {
+    flex: 1;
+    // background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 10rem;
+      width: 10rem;
+      object-fit: contain;
+    }
+  }
+}

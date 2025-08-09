@@ -1,0 +1,320 @@
+.container {
+  margin-top: 1rem;
+  border-radius: 40px;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  // height: 210%;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  // grid-template-rows: repeat(9, [row-start] 5rem [row-end]) minmax(0rem, 1fr);
+  // grid-template-columns: repeat(
+  //   5,
+  //   [col-small-start] minmax(0rem, 1fr) [col-small-end]
+  // );
+  &_ticketdetailsTop {
+    // grid-row: row-start 1 / row-end 3;
+    // grid-column: col-small-start 1 / col-small-end 3;
+    padding: 2%;
+    border-radius: 20px;
+    background-image: linear-gradient(#d2e4f9, #f2f8ff);
+    // border-bottom: 1px solid black;
+    // background-color: red;
+  }
+  &_ticketdetailsRight {
+    // grid-row: row-start 1 / row-end 9;
+    // grid-column: col-small-start 4 / col-small-end 5;
+    // margin-top: 2%;
+    // background-color: yellow;
+  }
+  &_ticketdetailsBottom {
+    // grid-row: row-start 4 / row-end 9;
+    // grid-column: col-small-start 1 / col-small-end 3;
+    display: flex;
+    flex-direction: column;
+
+    // background-color: blueviolet;
+  }
+}
+
+.profile {
+  border-radius: 50%;
+  min-height: 6rem;
+  max-height: 6rem;
+  min-width: 6rem;
+  max-width: 6rem;
+  object-fit: cover;
+  border: 4px solid grey;
+}
+.imageContainer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    & > * {
+      max-height: 6rem;
+      min-height: 6rem;
+      min-width: 6rem;
+      max-width: 6rem;
+      cursor: pointer;
+      img {
+        cursor: pointer;
+        object-fit: fill;
+      }
+    }
+    .fileInputContainer {
+      border: 1px dashed black;
+      label {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.chatContainer {
+  // height: 100%;
+  flex: 6;
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.chatMessage {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageText {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  // font-size: 12px;
+  .big_text {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
+
+.messageTime {
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // font-size: 12px;
+}
+
+.chatInputContainer {
+  display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+
+  // margin-top: 10%;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Styles for the send button */
+.sendButton {
+  padding: 15px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  margin-top: 1rem;
+  border-radius: 40px;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 210%;
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  // grid-template-rows: repeat(9, [row-start] 6rem [row-end]) minmax(0rem, 1fr);
+  // grid-template-columns: repeat(
+  //   5,
+  //   [col-small-start] minmax(0rem, 1fr) [col-small-end]
+  // );
+  &_ticketdetailsTop {
+    // grid-row: row-start 1 / row-end 3;
+    grid-column: col-small-start 1 / col-small-end 5;
+    padding: 2%;
+    border-radius: 20px;
+    background-image: linear-gradient(#d2e4f9, #f2f8ff);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .detail {
+      align-self: stretch;
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      column-gap: 5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: rgb(40, 40, 40);
+    }
+    // border-bottom: 1px solid black;
+    // background-color: red;
+  }
+  // &_ticketdetailsRight {
+  // grid-row: row-start 1 / row-end 9;
+  // grid-column: col-small-start 4 / col-small-end 5;
+  // margin-top: 2%;
+  // background-color: yellow;
+  // }
+  &_ticketdetailsBottom {
+    // grid-row: row-start 4 / row-end 8;
+    // grid-column: col-small-start 1 / col-small-end 5;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30rem;
+
+    // background-color: blueviolet;
+  }
+}
+
+.profile {
+  border-radius: 50%;
+  min-height: 6rem;
+  max-height: 6rem;
+  min-width: 6rem;
+  max-width: 6rem;
+  object-fit: cover;
+  border: 4px solid grey;
+}
+
+.chatContainer {
+  // height: 100%;
+  flex: 6;
+  padding: 0 10px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chatMessage {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 10px;
+  max-width: 80%;
+  border-radius: 5px;
+  display: flex;
+  column-gap: 1rem;
+  // row-gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+
+  box-sizing: border-box;
+  // align-self: flex-end;
+}
+
+.messageText {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  // font-size: 12px;
+  .big_text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    // row-gap: 0.2rem;
+    // line-gap-override: 1rem;
+    // line-height: 1rem;
+  }
+}
+
+.messageTime {
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // font-size: 12px;
+}
+
+.chatInputContainer {
+  display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+
+  // margin-top: 10%;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Styles for the send button */
+.sendButton {
+  padding: 15px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat_incoming {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    0.8rem 100%,
+    0.8rem 1rem,
+    0% 0%
+  );
+  padding-left: 1.4rem;
+  color: white;
+  background-color: #434e4f;
+  align-self: flex-start;
+}
+
+.chat_outgoing {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    calc(100% - 1.2rem) 0.8rem,
+    calc(100% - 1.2rem) 100%,
+    0% 100%
+  );
+  padding-right: 1.6rem;
+  color: white;
+  background: #005c63;
+  align-self: flex-end;
+}

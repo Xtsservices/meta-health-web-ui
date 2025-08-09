@@ -1,0 +1,141 @@
+.insurance-tab {
+    .custom-stepper {
+      .MuiStepLabel-label {
+        font-weight: bold;
+        color: gray !important; // Default color
+      }
+  
+      .MuiStepLabel-active {
+        color: #1977F3 !important; // Active step color
+      }
+  
+      .MuiStepLabel-completed {
+        color: #1977F3 !important; // Completed step color
+      }
+  
+      .MuiStepConnector-line {
+        border-color: lightgray; // Default connector line color
+      }
+  
+      .Mui-active .MuiStepConnector-line {
+        border-color: #1977F3; // Active step line color
+      }
+  
+      .Mui-completed .MuiStepConnector-line {
+        border-color: #1977F3; // Active step line color
+      }
+    }
+  
+    .insurance-details {
+      h3 {
+        color: #1977F3;
+      }
+  
+      p {
+        margin: 5px 0;
+      }
+  
+      input {
+        margin-left: 10px;
+      }
+    }
+  
+    .file-upload {
+      .upload-box {
+        border: 2px dashed lightgray;
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .uploaded-files {
+        margin-top: 10px;
+  
+        .file {
+          padding: 5px;
+          border: 1px solid lightgray;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .uploadheading{
+    color: #1977F3;
+  }
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .uploadSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 2px dotted #ccc;
+    border-radius: 5px;
+  }
+  
+  .cloudIcon {
+    color: #888;
+    font-size: 2rem;
+  }
+  
+  .browseText {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .addButton {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .addIcon {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .blueBackground {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .orangeBackground {
+    background-color: #ff9800; /* Orange */
+  }
+  
+  
+  .blueText {
+    color: #007bff;
+  }
+  

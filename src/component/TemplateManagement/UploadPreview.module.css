@@ -1,0 +1,256 @@
+.uploadPreviewMainContainer {
+  background-color: white;
+  border-radius: 18px;
+  margin-top: 20px !important;
+  margin-right: 10px;
+  min-height: 100vh;
+  padding: 18px;
+}
+
+.uploadPreviewContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.uploadSection {
+  width: 45%;
+}
+
+.uploadTitle {
+  font-size: 1.3rem;
+  padding: 15px;
+  display: flex;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.uploadDescription {
+  font-size: 1rem;
+  color: #555;
+}
+
+.uploadBox {
+  border: 2px dashed gray;
+  padding: 50px 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadButtonBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.uploadButton {
+  border-radius: 25px;
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.uploadButton:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.headingLine {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+.previewSection {
+  min-height: 500px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSectionPreview{
+    width: 50%;
+}
+
+.previewSection.hasPreview {
+  background-color: transparent;
+}
+
+.previewImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.previewText {
+  color: black;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancelButton {
+    margin-right: 10px;
+  }
+  
+  .saveButton {
+    margin-left: 10px;
+  }
+
+  .tableContainer{
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  .uploadedFilesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .uploadedFilesTable th,
+  .uploadedFilesTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .uploadedFilesTable th {
+    background-color: #f4f4f4;
+  }
+
+  .uploaded_box_buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .uploaded_box_buttons a {
+    text-decoration: none;
+  }
+  
+  .viewButton,
+  .deleteButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* View Button Styling */
+  .viewButton {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .viewButton:hover {
+    background-color: #115293;
+  }
+  
+  /* Delete Button Styling */
+  .deleteButton {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #9a0007;
+  }
+  
+  
+  .headercontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .preview{
+  min-height: 95vh;
+}
+
+.previewSubcontainer {
+  background-color: #F6F8FA;
+  border-radius: 12px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease, transform 0.2s ease; 
+    padding: 16px !important;
+    min-height: 95%;
+
+}
+
+.previewSubcontainer:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+}
+
+
+  .tools{
+    background-color:#FFFFFF;
+  min-height: 95vh;
+  }
+
+  .ullist{
+    list-style-type: none;
+    margin: 1rem;
+    min-height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .listItem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+    color: #000000;
+    border-top: 1px solid #E7E5E5;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+
+  .listItemimg{
+    height: 60px;
+    width: 60px;
+    margin-right: 2rem;
+  }
+.sampleTemplateul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+}
+  .sampleTemplate{
+    height: 120px;
+    height: 120px;
+    border: 1px solid gray;
+  }
+  .sampleTemplateHilight {
+    height: 120px;
+    border-radius: 5px;
+    border: 2px solid #1977F3;
+    padding: 10px;
+    position: relative; /* Ensure it can be moved */
+    z-index: 10; /* Increase z-index to bring it above other elements */
+    background-color: white; /* Add background to avoid transparency issues */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for emphasis */
+    transform: translateY(-10px); /* Moves the element up */
+}
