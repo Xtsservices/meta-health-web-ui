@@ -3,8 +3,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useJwt } from "react-jwt";
 import styles from "./login.module.scss";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
-import cross from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
+import cross from "./../../../src/assets/circlemeta.jpg";
 import LoginForm from "../../component/loginForm/loginForm";
 import vector from "./../../../src/assets/doctor_svg.png";
 import { ArrowBack } from "@mui/icons-material";
@@ -56,20 +56,23 @@ const Login = () => {
         <Link to="/">
           <ArrowBack />
         </Link>
-        <div className={styles.container_form_logo}>
+        <div>
           <Link to="/">
-            <img src={yantramLogo} alt="Yantram Logo" />
+          <h4 style={{color: "#000", fontWeight: "bold", textAlign: "center", display: "flex", justifyContent: "center", alignItems: "center"}}>
+      META HEALTH
+    </h4>
+            {/* <img src={yantramLogo} alt="Yantram Logo" /> */}
           </Link>
           {/* <img src={cross} alt="Cross Logo" /> */}
         </div>
         <LoginForm />
       </div>
       <div className={styles.container_vector}>
-        <div className={styles.container_vector_heading}>
+        {/* <div className={styles.container_vector_heading}>
           Intelligent Platform for Efficient Patient Management.
-        </div>
+        </div> */}
         <div className={styles.container_vector_image}>
-          <img src={vector} alt="Vector Illustration" />
+          {/* <img src={vector} alt="Vector Illustration" /> */}
         </div>
       </div>
     </div>

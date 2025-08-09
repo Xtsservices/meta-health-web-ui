@@ -189,7 +189,7 @@ const PopperMenu: React.FC<PopperMenuProps> = ({
                 </div>
 
                 <div style={{ textAlign: "center", marginBottom: "16px" }}>
-                  <div>Yantram User ID : {user.id}</div>
+                  <div>Meta Health User ID : {user.id}</div>
                 </div>
 
                 <ClickAwayListener onClickAway={handleClose}>

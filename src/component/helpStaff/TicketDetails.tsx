@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import styles from "./TicketDetails.module.scss";
 // import FormControl from "@mui/material/FormControl";
 // import InputLabel from "@mui/material/InputLabel";
-// import ylogo from "./../../../../src/assets/cross_logo.png";
+// import ylogo from "./../../../../src/assets/circlemeta.jpg";
 import { IconButton } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 // import { authFetch } from "../../../axios/useAuthFetch";

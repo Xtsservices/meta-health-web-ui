@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sidebar.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import dashboard from "./../../../src/assets/sidebar/New/ACTIVE/dashboard.png";
 import dashboardDark from "./../../../src/assets/sidebar/New/INACTIVE/dashboard.png";
 import love from "./../../../src/assets/love.png";
@@ -132,7 +132,7 @@ function EmergencyGreenSidebar(): JSX.Element {
             <div className={styles.line}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

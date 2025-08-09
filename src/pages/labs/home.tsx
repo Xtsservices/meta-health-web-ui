@@ -1,5 +1,5 @@
 import styles from "./home.module.scss";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import love from "./../../../src/assets/love.png";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { useSelector } from "react-redux";
@@ -127,7 +127,7 @@ function LabHome() {
           Streamlined Medical Data Access for Improved Patient Care
         </div>
         <LabWidgets />
-        <img src={love} alt="" className={styles.tagline} />
+        {/* <img src={love} alt="" className={styles.tagline} /> */}
       </div>
     </>
   );

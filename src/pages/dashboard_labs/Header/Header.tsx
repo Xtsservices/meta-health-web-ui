@@ -5,7 +5,7 @@ import PopperMenu from "../../common/popper/Popper";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { selectCurrentUser } from "../../../store/user/user.selector";
-import yantramLogo from "../../../../src/assets/cross_logo.png";
+import yantramLogo from "../../../../src/assets/circlemeta.jpg";
 
 function Header({ searchHandler, search }: any) {
   const [open, setOpen] = useState<boolean>(false);

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
-import yantram_logo from "../../assets/cross_logo.png";
+import yantram_logo from "../../assets/circlemeta.jpg";
 import DeviceCard from "../../component/website/DeviceCard";
 import SponserCard from "../../component/website/SponserCard";
 import mainSlider from "../../assets/website/main_slider.jpg";
@@ -59,9 +59,9 @@ const YantramWebsite = () => {
         <Link to="/">
           {/* <img src={yantram_logo} alt="" className="logo" /> */}
         </Link>
-        <h3>Yantram Medtech</h3>
+        <h3>Meta Health</h3>
         <div>
-          <button onClick={handleScrollProducts}>Our Products</button>
+          {/* <button onClick={handleScrollProducts}>Our Products</button> */}
           <Link to="/login">
             <button style={{ marginLeft: "10px" }}>Login</button>
           </Link>
@@ -81,15 +81,15 @@ const YantramWebsite = () => {
         </div>
       </div>
       {/* DEVICE CARD */}
-      <div ref={prodRef} className="web-deviceCard-container">
+      {/* <div ref={prodRef} className="web-deviceCard-container">
         <DeviceCard index={0} updateScroll={handleScroll} />
         <DeviceCard index={1} updateScroll={handleScroll} />
         <DeviceCard index={2} updateScroll={handleScroll} />
         <DeviceCard index={3} updateScroll={handleScroll} />
-      </div>
+      </div> */}
 
       {/* NV-CORE DEVICE */}
-      <div ref={nvCoreRef} className="web-device-container">
+      {/* <div ref={nvCoreRef} className="web-device-container">
         <div className="device-top">
           <div className="device-top-image">
             <img src={nvcore} alt="" className="logo" />
@@ -141,10 +141,10 @@ const YantramWebsite = () => {
             the previous data as the app has cloud storage.
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* VTRACK DEVICE */}
-      <div ref={vTrackRef} className="web-device-container">
+      {/* <div ref={vTrackRef} className="web-device-container">
         <div className="device-top">
           <div className="device-top-image">
             <img src={vtrack} alt="" className="logo" />
@@ -161,7 +161,7 @@ const YantramWebsite = () => {
           </div>
         </div>
 
-        {/* <Divider variant="middle" /> */}
+     
 
         <div className="device-features">
           <h3>Key Features</h3>
@@ -265,10 +265,10 @@ const YantramWebsite = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       {/* VITALS DEVICE */}
-      <div ref={vitalsRef} className="web-device-container">
+      {/* <div ref={vitalsRef} className="web-device-container">
         <div className="device-top">
           <div className="device-top-image">
             <img src={vitals} alt="" className="logo" />
@@ -323,10 +323,10 @@ const YantramWebsite = () => {
             <li>Portable charger will be given along with the device.</li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      {/* CPAP DEVICE */}
-      <div ref={cpapRef} className="web-device-container">
+     
+      {/* <div ref={cpapRef} className="web-device-container">
         <div className="device-top">
           <div className="device-top-image">
             <img src={cpap} alt="" className="logo" />
@@ -401,17 +401,16 @@ const YantramWebsite = () => {
           </p>
         </div>
       </div>
-      {/* SPONSER CARD */}
-      <div className="web-sponser-container">
+       */}
+      {/* <div className="web-sponser-container">
         <h3>Sponsors & Partners</h3>
         <div className="web-sponser-cards">
           {sponser.map((item, index) => (
             <SponserCard index={item} key={index} />
           ))}
         </div>
-      </div>
-
-      {/* FOOTER */}
+      </div> */}
+{/* 
       <div className="web-footer">
         <div className="footer-top">
           <div className="left-footer">
@@ -471,7 +470,7 @@ const YantramWebsite = () => {
         <div className="bottom-footer">
           <SocialFollow />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

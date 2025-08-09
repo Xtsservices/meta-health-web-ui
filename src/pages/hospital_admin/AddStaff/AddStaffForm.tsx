@@ -861,10 +861,18 @@ console.log("user============",user)
                   fullWidth
                   // sx={{ width: 0.48, mt: "1rem" }}
                 >
-                  <InputLabel id="demo-simple-select-helper-label">
+                   <TextField
+              id="outlined-required"
+              label="State *"
+              name="state"
+              value={formData.state.value}
+              onChange={handleChangeInput}
+              fullWidth
+            />
+                  {/* <InputLabel id="demo-simple-select-helper-label">
                     State
-                  </InputLabel>
-                  <Select
+                  </InputLabel> */}
+                  {/* <Select
                     labelId="demo-simple-select-helper-label"
                     id="demo-simple-select-helper"
                     value={String(formData.state.value)}
@@ -881,7 +889,7 @@ console.log("user============",user)
                     {states.map((el) => (
                       <MenuItem key={el.state} value={el.state}>{el.state}</MenuItem>
                     ))}
-                  </Select>
+                  </Select> */}
                 </FormControl>
                 {formData.state.showError && (
                   <div style={styles.errorText}>{formData.state.message}</div>
@@ -890,7 +898,15 @@ console.log("user============",user)
 
               {/* =======City======= */}
               <Grid item xs={6}>
-                <Autocomplete
+                <TextField
+              id="outlined-required"
+              label="City *"
+              name="city"
+              value={formData.city.value}
+              onChange={handleChangeInput}
+              fullWidth
+            />
+                {/* <Autocomplete
                   freeSolo // Allow the user to input a value that's not in the options list
                   value={formData.city.value || null}
                   onChange={(_event: unknown, newValue: string | null) => {
@@ -924,7 +940,7 @@ console.log("user============",user)
                   renderInput={(params) => (
                     <TextField {...params} label="City *" />
                   )}
-                />
+                /> */}
                 {formData.city.showError && (
                   <div style={styles.errorText}>{formData.city.message}</div>
                 )}

@@ -3,7 +3,7 @@ import styles from "./sidebar.module.scss";
 import admin_styles from "./admin_styles.module.scss";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import dashboardDark from "./../../assets/nurse/material-symbols_dashboard-rounded-1.png";
 import dashboardLight from "./../../assets/nurse/material-symbols_dashboard-rounded.png";
 import alertDark from "./../../assets/nurse/mingcute_alert-fill-1.png";

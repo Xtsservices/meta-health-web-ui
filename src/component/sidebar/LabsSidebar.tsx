@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./sidebar.module.scss";
 import { Outlet } from "react-router-dom";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import love from "./../../../src/assets/love.png";
 import search_icon from "./../../../src/assets/sidebar/search_icon.png";
 import Dialog from "@mui/material/Dialog";
@@ -238,7 +238,7 @@ function LabsSidebar(): JSX.Element {
             <div className={styles.line}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

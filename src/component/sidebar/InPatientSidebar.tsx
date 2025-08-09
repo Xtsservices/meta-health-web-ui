@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./sidebar.module.scss";
 import { Outlet } from "react-router-dom";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import dashboard from "./../../../src/assets/sidebar/New/ACTIVE/dashboard.png";
 import dashboardDark from "./../../../src/assets/sidebar/New/INACTIVE/dashboard.png";
 import addpatient_light from "./../../../src/assets/sidebar/New/ACTIVE/add.png";
@@ -245,7 +245,7 @@ function Staff_sidebar(): JSX.Element {
             <div className={styles.line}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

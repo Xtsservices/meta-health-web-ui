@@ -1,7 +1,7 @@
 import styles from "./Header.module.scss";
 import { FaSearch, FaUserCircle } from "react-icons/fa";
 
-import yantramLogo from "../../../assets/reception/cross_logo.png";
+import yantramLogo from "../../../assets/reception/circlemeta.jpg";
 
 function Header() {
   return (

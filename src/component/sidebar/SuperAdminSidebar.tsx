@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./sidebar.module.scss";
 import super_admin_styles from "./super_admin_styles.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import addpatient_light from "./../../../src/assets/sidebar/addpatient_light.png";
 import add_patient from "./../../../src/assets/sidebar/add_patient.png";
 import dashboard_icon from "./../../../src/assets/sidebar/dashboard_icon.png";

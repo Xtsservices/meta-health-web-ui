@@ -4,7 +4,7 @@ import { makeStyles } from "@mui/styles";
 import { useSelector } from "react-redux";
 import { Dialog, Box, LinearProgress } from "@mui/material";
 import styles from "./sidebar.module.scss";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import dashboard from "./../../../src/assets/sidebar/New/ACTIVE/dashboard.png";
 import dashboardDark from "./../../../src/assets/sidebar/New/INACTIVE/dashboard.png";
 import addpatient_light from "./../../../src/assets/sidebar/New/ACTIVE/add.png";
@@ -132,7 +132,7 @@ const OutPatientSidebar = () => {
             <div className={styles.line}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

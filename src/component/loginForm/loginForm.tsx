@@ -77,7 +77,7 @@ const LoginForm = () => {
           type="email"
           className=""
           id="email"
-          placeholder="Enter your password"
+          placeholder="Enter your email"
           autoFocus
           required
           formNoValidate

@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Image,
 } from "@react-pdf/renderer";
-import hospitallogo from "../../../assets/website/cross_logo.png";
+import hospitallogo from "../../../assets/website/circlemeta.jpg";
 import { PatientType } from "../../../types";
 import TaxInvoiceTableDocument from "./TaxInvoiceTableDocument";
 

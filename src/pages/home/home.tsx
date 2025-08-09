@@ -1,5 +1,6 @@
 import styles from "./home.module.scss";
-import yantramLogo from "./../../../src/assets/cross_logo.png";
+import yantramLogo2 from "./../../../src/assets/circlemeta.jpg";
+import yantramLogo from "./../../../src/assets/circlemeta.jpg";
 import HomeWidzet from "../../component/homeWidzet/homeWidzet";
 import love from "./../../../src/assets/love.png";
 import { selectCurrentUser } from "../../store/user/user.selector";
@@ -235,7 +236,7 @@ function Home() {
                 </div>
 
                 <div style={{ textAlign: "center", marginBottom: "16px" }}>
-                  <div>Yantram User ID : {user.id}</div>
+                  <div>Meta Health User ID : {user.id}</div>
                 </div>
 
                 <ClickAwayListener onClickAway={handleClose}>
@@ -323,7 +324,7 @@ function Home() {
           Streamlined Medical Data Access for Improved Patient Care
         </div>
         <HomeWidzet />
-        <img src={love} alt="" className={styles.tagline} />
+        {/* <img src={love} alt="" className={styles.tagline} /> */}
       </div>
     </>
   );
