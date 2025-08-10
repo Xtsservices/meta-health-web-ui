@@ -434,14 +434,14 @@ const PaymentMethodDialog = ({
               onSubmitPaymenthandler(paymentDataWithTime);
               onClose((prevState) => !prevState);
             }}
-            disabled={
-              !selectedMethod ||
-              pType === 1 ||
-              (pType === 21 && roundedTotal !== amount) ||
-              ((pType === 2 || pType === 3) && roundedTotal <= 0) ||
-              (pharmacySale && roundedTotal !== amount) ||
-              (path && roundedTotal !== amount)
-            }
+            // disabled={
+            //   !selectedMethod ||
+            //   pType === 1 ||
+            //   (pType === 21 && roundedTotal !== amount) ||
+            //   ((pType === 2 || pType === 3) && roundedTotal <= 0) ||
+            //   (pharmacySale && roundedTotal !== amount) ||
+            //   (path && roundedTotal !== amount)
+            // }
             sx={{
               padding: "6px 26px",
               width: "319px",

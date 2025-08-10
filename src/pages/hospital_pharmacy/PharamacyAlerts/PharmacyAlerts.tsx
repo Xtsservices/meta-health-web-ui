@@ -47,7 +47,7 @@ const PharmacyAlerts = () => {
   return (
     <div className={styles.container}>
       <div className={styles.button_container}>
-       <button className={styles.button_border_color}> Test Alerts</button>
+       <button className={styles.button_border_color}> Pharmacy Alerts</button>
       </div>
       <PatientOuterTable
         title="Alerts From IPD and Emergency"
