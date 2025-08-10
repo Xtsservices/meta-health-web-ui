@@ -89,7 +89,7 @@ const LabsPatientList = () => {
             patientList = walkinResponse.patientList;
           }
         }
-  
+  console.log("userboom",user)
         // Fetch IPD & OPD Patients if needed
         if (patientType !== 3) {
           const response = await authFetch(

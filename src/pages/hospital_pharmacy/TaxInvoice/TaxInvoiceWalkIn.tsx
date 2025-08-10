@@ -190,7 +190,7 @@ const TaxInvoiceWalkIn = ({ type , startDate, endDate}: TaxInvoiceInPatientProps
 
                 <TableCell style={{ fontSize: "15px" }}>
                   
-                  <button
+                  {/* <button
                                       style={{
                                         display: "flex",
                                         alignContent: "center",
@@ -203,7 +203,7 @@ const TaxInvoiceWalkIn = ({ type , startDate, endDate}: TaxInvoiceInPatientProps
                                       onClick={() => handlePrintTaxInvoice(order.id)} 
                                     >
                                       <img src={download} alt="download button" />
-                                    </button>
+                                    </button> */}
                 </TableCell>
 
                 <TableCell>
@@ -297,7 +297,7 @@ const TaxInvoiceWalkIn = ({ type , startDate, endDate}: TaxInvoiceInPatientProps
 
                 <TableCell style={{ fontSize: "15px" }}>
                 
-                <button
+                {/* <button
                                     style={{
                                       display: "flex",
                                       alignContent: "center",
@@ -310,7 +310,7 @@ const TaxInvoiceWalkIn = ({ type , startDate, endDate}: TaxInvoiceInPatientProps
                                     onClick={() => handlePrintTaxInvoice(order.id)} 
                                   >
                                     <img src={download} alt="download button" />
-                                  </button>
+                                  </button> */}
               </TableCell>
 
                 <TableCell>
@@ -466,9 +466,9 @@ const TaxInvoiceWalkIn = ({ type , startDate, endDate}: TaxInvoiceInPatientProps
               <TableCell style={{ fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>Mobile No.</TableCell>
               <TableCell style={{ fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>Admission Date</TableCell>
               <TableCell style={{ fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>Prescription</TableCell>
-              <TableCell style={{ fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>
+              {/* <TableCell style={{ fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>
                 Invoice download
-              </TableCell>
+              </TableCell> */}
 
               <TableCell style ={{fontWeight: "bold",color:"#ffffff", fontSize:"16px" }}>Action</TableCell>
 

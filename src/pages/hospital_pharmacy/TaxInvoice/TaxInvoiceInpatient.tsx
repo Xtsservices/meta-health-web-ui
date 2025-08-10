@@ -210,7 +210,7 @@ const TaxInvoiceInPatient = ({
                 </TableCell>
                 <TableCell style={{fontSize:"15px" }}>
                       
-                        <button
+                        {/* <button
                     style={{
                       display: "flex",
                       alignContent: "center",
@@ -223,7 +223,7 @@ const TaxInvoiceInPatient = ({
                     onClick={() => handlePrintTaxInvoice(order.id)} 
                   >
                     <img src={download} alt="download button" />
-                  </button>
+                  </button> */}
                 </TableCell>
                 <TableCell>
                   <IconButton size="small">
@@ -314,7 +314,7 @@ const TaxInvoiceInPatient = ({
                 {dayjs(order.addedOn).format("MMM DD, YYYY")}
                 </TableCell>
                 <TableCell style={{ fontSize: "15px" }}>
-                  <button
+                  {/* <button
                     style={{
                       background: "transparent",
                       border: "none",
@@ -324,7 +324,7 @@ const TaxInvoiceInPatient = ({
                     onClick={() => handlePrintTaxInvoice(index + 1)} 
                   >
                     <img src={download} alt="download button" />
-                  </button>
+                  </button> */}
                 </TableCell>
 
                 <TableCell>
@@ -394,7 +394,7 @@ const TaxInvoiceInPatient = ({
               <TableCell style={{ fontWeight: "bold",color:"#ffffff",fontSize:"16px" }}>Doctor Name</TableCell>
               <TableCell style={{ fontWeight: "bold",color:"#ffffff",fontSize:"16px" }}> Admission Date</TableCell>
               <TableCell style={{ fontWeight: "bold",color:"#ffffff",fontSize:"16px" }}>
-                Invoice Download
+                {/* Invoice Download */}
               </TableCell>
 
             <TableCell style={{ fontWeight: "bold",color:"#ffffff" }}>Action</TableCell>
