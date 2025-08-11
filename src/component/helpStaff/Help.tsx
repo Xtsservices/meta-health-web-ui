@@ -208,7 +208,7 @@ function HelpStaff() {
             </div>
             <h4>Dashboard Information</h4>
           </div>
-          <div
+          {/* <div
             className={styles.card + " " + styles.card_2}
             onClick={() => handleTabChange("videos")}
           >
@@ -216,8 +216,8 @@ function HelpStaff() {
               <OndemandVideoIcon sx={{ width: "40px" }} />
             </div>
             <h4>Videos</h4>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={styles.card + " " + styles.card_3}
             onClick={() => handleTabChange("manuals")}
           >
@@ -226,7 +226,7 @@ function HelpStaff() {
               <LiveHelpIcon sx={{ width: "40px" }} />
             </div>
             <h4>Manuals</h4>
-          </div>
+          </div> */}
           <div
             className={styles.card + " " + styles.card_4}
             onClick={() => handleTabChange("tickets")}

@@ -653,7 +653,7 @@ const AdminDashboard = () => {
           </div>
 
           {/* =================devices=============== */}
-          <div className={styles.container_stats}>
+          {/* <div className={styles.container_stats}>
             <div className={styles.container_stats_progressbar}>
               <h4 style={{ marginBottom: "20px" }}>
                 Percentage usage of Devices
@@ -703,16 +703,12 @@ const AdminDashboard = () => {
                   </div>
                 </div>
               </div>
-              {/* <CircularProgress percentage={60} name={"Emergency"} />
-              <CircularProgress percentage={80} name={"Inpatient"} />
-              <CircularProgress percentage={30} name={"Out Patient"} /> */}
+             
             </div>
 
             <div className={styles.container_stats_progressbar}>
               <h4 style={{ marginBottom: "20px" }}>Percentage usage of Hubs</h4>
-              {/* <CircularProgress percentage={60} name={"Emergency"} />
-              <CircularProgress percentage={80} name={"Inpatient"} />
-              <CircularProgress percentage={30} name={"Out Patient"} /> */}
+            
               <div className={styles.container_stats_progressbar_circular}>
                 <CircularProgress
                   percentage1={hubData?.outPatient || 0}
@@ -759,7 +755,7 @@ const AdminDashboard = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

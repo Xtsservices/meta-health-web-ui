@@ -5,6 +5,118 @@
   line-height: 2rem;
 
   .web-header {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #03989e 0%, #a6a6a6 100%);
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(3, 152, 158, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    // Add a subtle overlay effect
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.05);
+      pointer-events: none;
+    }
+
+    @include respond(phone-big) {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      margin: 0 20px;
+    }
+
+    .logo {
+      max-width: 230px;
+      height: 90%;
+      filter: brightness(1.1) contrast(1.1);
+      transition: all 0.3s ease;
+      z-index: 1;
+
+      &:hover {
+        filter: brightness(1.2) contrast(1.2);
+        transform: scale(1.05);
+      }
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px;
+      z-index: 1;
+      position: relative;
+      
+      // Add a subtle glow effect
+      &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: -1;
+        filter: blur(2px);
+      }
+
+      @include respond(phone-big) {
+        font-size: 1.8rem;
+        margin: 15px 0;
+      }
+    }
+
+    button {
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      z-index: 1;
+      position: relative;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      @include respond(phone-big) {
+        margin: 10px 0;
+      }
+    }
+
+    // Alternative solid background option (comment out gradient above and use this)
+    // background-color: #03989e;
+    // border-bottom: 4px solid #a6a6a6;
+  }
+
+  // Alternative header design with split colors
+  .web-header-alt {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 30px;
@@ -13,42 +125,62 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #03989e;
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(3, 152, 158, 0.3);
+    position: relative;
+    border-top: 3px solid #a6a6a6;
 
     @include respond(phone-big) {
       flex-direction: column;
-      height: 40vh;
+      height: auto;
+      padding: 20px;
+      margin: 0 20px;
     }
 
     .logo {
-      max-width: 230;
+      max-width: 230px;
       height: 90%;
     }
 
     h3 {
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     button {
-      padding: 10px 20px;
-      background-color: rgb(238, 229, 229);
-      color: black;
+      padding: 12px 24px;
+      background-color: #a6a6a6;
+      color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 25px;
       cursor: pointer;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken(#a6a6a6, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 
   .web-slider-container {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     margin-top: 20px;
     width: 100%;
 
     .web-slider-img {
       position: absolute;
       height: 100%;
+      width: 100%;
       object-fit: fill;
       overflow: hidden;
       background-color: grey;

@@ -62,14 +62,14 @@ const SuperAdminSidebar = () => {
               bgColor={styles.active}
               setSearch={() => ""}
             />
-            <Button
+            {/* <Button
               linkName={"add-customerCare"}
               name={"Add Customer Care Executive"}
               iconDark={add_patient}
               iconLight={addpatient_light}
               bgColor={styles.active}
               setSearch={() => ""}
-            />
+            /> */}
            
             <Button
               linkName={"tickets"}
@@ -83,7 +83,7 @@ const SuperAdminSidebar = () => {
             <div style={{ marginTop: "1rem" }}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

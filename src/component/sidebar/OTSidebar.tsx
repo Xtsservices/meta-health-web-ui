@@ -158,7 +158,7 @@ function OT_sidebar(): JSX.Element {
             <div className={styles.line}></div>
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

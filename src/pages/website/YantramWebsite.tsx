@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import yantram_logo from "../../assets/circlemeta.jpg";
 import DeviceCard from "../../component/website/DeviceCard";
 import SponserCard from "../../component/website/SponserCard";
-import mainSlider from "../../assets/website/main_slider.jpg";
+import mainSlider2 from "../../assets/website/main_slider.jpg";
+import mainSlider from "../../assets/website/landing.png";
 import SocialFollow from "../../component/website/social";
 import vtrack from "../../assets/website/v_track.png";
 import vitals from "../../assets/website/vitals.png";
@@ -72,13 +73,13 @@ const YantramWebsite = () => {
         <div className="web-slider-img">
           <img src={mainSlider} alt="main-image" className="main-image" />
         </div>
-        <div className="web-slider-trans">
+        {/* <div className="web-slider-trans">
           <p></p>
-        </div>
-        <div className="web-slider-body">
+        </div> */}
+        {/* <div className="web-slider-body">
           <h2>Smart Range Products</h2>
           <h4>Preferred by Medical Professionals</h4>
-        </div>
+        </div> */}
       </div>
       {/* DEVICE CARD */}
       {/* <div ref={prodRef} className="web-deviceCard-container">

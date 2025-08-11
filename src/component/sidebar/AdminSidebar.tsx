@@ -163,18 +163,18 @@ const AdminSidebar = () => {
               iconDark={inpatient}
               iconLight={inpatient_light}
             />
-            <Buttons
+            {/* <Buttons
               linkName={"/inpatient/admin/allHub"}
               name={"All Hub"}
               iconDark={hub_icon}
               iconLight={hub_icon_light}
-            />
-            <Buttons
+            /> */}
+            {/* <Buttons
               linkName={"/inpatient/admin/allDevices"}
               name={"All Devices"}
               iconDark={device_icon}
               iconLight={device_icon_light}
-            />
+            /> */}
             <div className={styles.line}></div>
             <div style={{ marginTop: "1rem" }}></div>
             <Buttons
@@ -225,7 +225,7 @@ const AdminSidebar = () => {
             />
 
             <div className={styles.love}>
-              <img src={love} alt="" className="" />
+              {/* <img src={love} alt="" className="" /> */}
             </div>
           </div>
         </div>

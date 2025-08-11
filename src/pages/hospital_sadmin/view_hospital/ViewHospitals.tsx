@@ -277,10 +277,10 @@ function ViewHospitals() {
                             <b>City</b>
                           </TableCell>
                           <TableCell>
-                            <b>No. of Hubs</b>
+                            {/* <b>No. of Hubs</b> */}
                           </TableCell>
                           <TableCell>
-                            <b>No. of Devices</b>
+                            {/* <b>No. of Devices</b> */}
                           </TableCell>
                           <TableCell>
                             <b>Added On</b>
@@ -310,8 +310,12 @@ function ViewHospitals() {
                             <TableCell>
                               {capitalizeFirstLetter(hospital.city)}
                             </TableCell>
-                            <TableCell>{hospital.hub_count}</TableCell>
-                            <TableCell>{hospital.device_count}</TableCell>
+                            <TableCell>
+                              {/* {hospital.hub_count} */}
+                              </TableCell>
+                            <TableCell>
+                              {/* {hospital.device_count} */}
+                              </TableCell>
                             <TableCell>
                               {formatDate2(hospital.addedOn)}
                             </TableCell>
